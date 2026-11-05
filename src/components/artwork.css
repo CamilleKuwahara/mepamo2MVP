@@ -1,0 +1,26 @@
+﻿/* Supplied geometry and animation timings; selectors/keyframes scoped to this component. */
+[data-mepamo-mascot], [data-mepamo-fuji] { display: block; width: 100%; }
+.mepamo-mascot, .mepamo-fuji { display: block; width: 100%; height: auto; }
+.mepamo-mascot .wave {
+  transform-origin: 230px 209px;
+  animation: mepamo-mascot-wave 2.4s ease-in-out infinite;
+}
+.mepamo-mascot .wave-marks { animation: mepamo-mascot-greeting 2.4s ease-in-out infinite; }
+.mepamo-mascot .pupil { transition: transform 90ms ease-out; }
+@keyframes mepamo-mascot-wave {
+  0%, 65%, 100% { transform: rotate(0deg); }
+  12%, 36% { transform: rotate(-13deg); }
+  24%, 48% { transform: rotate(9deg); }
+}
+@keyframes mepamo-mascot-greeting {
+  0%, 60%, 100% { opacity: .65; }
+  12%, 36% { opacity: 1; }
+  24%, 48% { opacity: .8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mepamo-mascot .wave, .mepamo-mascot .wave-marks { animation: none; }
+  .mepamo-mascot .pupil { transition: none; }
+}
+/* Reserve the previous artwork slots so nearby content keeps its position. */
+.mascot { aspect-ratio: 55 / 56; display: grid; align-items: center; }
+.fuji-sticker { aspect-ratio: 20 / 19; display: grid; align-items: center; }

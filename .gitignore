@@ -1,0 +1,19 @@
+﻿# Local dependencies and generated output
+node_modules/
+dist/
+test-results/
+playwright-report/
+
+# Local credentials and environment settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Duplicate packaged exports and OS files
+*.zip
+.DS_Store
+Thumbs.db

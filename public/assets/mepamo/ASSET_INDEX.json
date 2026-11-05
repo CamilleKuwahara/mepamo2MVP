@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "provenance": "New reconstructions authored from Mepamo_Asset_Reference (1).png and Mepamo_Codex_Asset_Instructions.md. Not the missing original asset kit.",
+  "assets": [
+    {
+      "file": "icons/star.svg",
+      "png2x": "png2x/icons--star.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone star; decorative when next to live text."
+    },
+    {
+      "file": "icons/check.svg",
+      "png2x": "png2x/icons--check.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone check; decorative when next to live text."
+    },
+    {
+      "file": "icons/book.svg",
+      "png2x": "png2x/icons--book.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone book; decorative when next to live text."
+    },
+    {
+      "file": "icons/trophy.svg",
+      "png2x": "png2x/icons--trophy.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone trophy; decorative when next to live text."
+    },
+    {
+      "file": "icons/lock.svg",
+      "png2x": "png2x/icons--lock.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone lock; decorative when next to live text."
+    },
+    {
+      "file": "icons/heart.svg",
+      "png2x": "png2x/icons--heart.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone heart; decorative when next to live text."
+    },
+    {
+      "file": "icons/flame.svg",
+      "png2x": "png2x/icons--flame.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone flame; decorative when next to live text."
+    },
+    {
+      "file": "icons/close.svg",
+      "png2x": "png2x/icons--close.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone close; decorative when next to live text."
+    },
+    {
+      "file": "icons/arrow-right.svg",
+      "png2x": "png2x/icons--arrow-right.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone arrow-right; decorative when next to live text."
+    },
+    {
+      "file": "icons/arrow-left.svg",
+      "png2x": "png2x/icons--arrow-left.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone arrow-left; decorative when next to live text."
+    },
+    {
+      "file": "icons/info.svg",
+      "png2x": "png2x/icons--info.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone info; decorative when next to live text."
+    },
+    {
+      "file": "icons/retry.svg",
+      "png2x": "png2x/icons--retry.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone retry; decorative when next to live text."
+    },
+    {
+      "file": "icons/check-circle.svg",
+      "png2x": "png2x/icons--check-circle.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone check-circle; decorative when next to live text."
+    },
+    {
+      "file": "icons/error-circle.svg",
+      "png2x": "png2x/icons--error-circle.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone error-circle; decorative when next to live text."
+    },
+    {
+      "file": "icons/radio-empty.svg",
+      "png2x": "png2x/icons--radio-empty.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone radio-empty; decorative when next to live text."
+    },
+    {
+      "file": "icons/radio-selected.svg",
+      "png2x": "png2x/icons--radio-selected.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone radio-selected; decorative when next to live text."
+    },
+    {
+      "file": "icons/leaf.svg",
+      "png2x": "png2x/icons--leaf.png",
+      "width": 24,
+      "height": 24,
+      "usage": "Standalone leaf; decorative when next to live text."
+    },
+    {
+      "file": "nodes/node-current.svg",
+      "png2x": "png2x/nodes--node-current.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face, 84px ring."
+    },
+    {
+      "file": "nodes/node-current-hover.svg",
+      "png2x": "png2x/nodes--node-current-hover.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face, 84px ring."
+    },
+    {
+      "file": "nodes/node-current-pressed.svg",
+      "png2x": "png2x/nodes--node-current-pressed.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face, 84px ring."
+    },
+    {
+      "file": "nodes/node-available.svg",
+      "png2x": "png2x/nodes--node-available.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-complete.svg",
+      "png2x": "png2x/nodes--node-complete.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-locked.svg",
+      "png2x": "png2x/nodes--node-locked.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-locked-book.svg",
+      "png2x": "png2x/nodes--node-locked-book.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-final-locked.svg",
+      "png2x": "png2x/nodes--node-final-locked.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-final-available.svg",
+      "png2x": "png2x/nodes--node-final-available.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "nodes/node-final-complete.svg",
+      "png2x": "png2x/nodes--node-final-complete.png",
+      "width": 96,
+      "height": 104,
+      "usage": "96×104 fixed hitbox; 64px face."
+    },
+    {
+      "file": "callouts/callout-empty.svg",
+      "png2x": "png2x/callouts--callout-empty.png",
+      "width": 120,
+      "height": 62,
+      "usage": "Background only; overlay live START or RESUME text."
+    },
+    {
+      "file": "callouts/callout-start.svg",
+      "png2x": "png2x/callouts--callout-start.png",
+      "width": 120,
+      "height": 62,
+      "usage": "Visual snapshot only; production callout text stays live."
+    },
+    {
+      "file": "callouts/callout-resume.svg",
+      "png2x": "png2x/callouts--callout-resume.png",
+      "width": 120,
+      "height": 62,
+      "usage": "Visual snapshot only; production callout text stays live."
+    },
+    {
+      "file": "components/button-default.svg",
+      "png2x": "png2x/components--button-default.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/button-hover.svg",
+      "png2x": "png2x/components--button-hover.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/button-pressed.svg",
+      "png2x": "png2x/components--button-pressed.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/button-disabled.svg",
+      "png2x": "png2x/components--button-disabled.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/button-focus.svg",
+      "png2x": "png2x/components--button-focus.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/button-secondary.svg",
+      "png2x": "png2x/components--button-secondary.png",
+      "width": 176,
+      "height": 54,
+      "usage": "Visual snapshot. Use a native button with live text and CSS states."
+    },
+    {
+      "file": "components/answer-default.svg",
+      "png2x": "png2x/components--answer-default.png",
+      "width": 360,
+      "height": 46,
+      "usage": "Visual snapshot; keep option text and answer state accessible in native controls."
+    },
+    {
+      "file": "components/answer-selected.svg",
+      "png2x": "png2x/components--answer-selected.png",
+      "width": 360,
+      "height": 46,
+      "usage": "Visual snapshot; keep option text and answer state accessible in native controls."
+    },
+    {
+      "file": "components/answer-correct.svg",
+      "png2x": "png2x/components--answer-correct.png",
+      "width": 360,
+      "height": 46,
+      "usage": "Visual snapshot; keep option text and answer state accessible in native controls."
+    },
+    {
+      "file": "components/answer-incorrect.svg",
+      "png2x": "png2x/components--answer-incorrect.png",
+      "width": 360,
+      "height": 46,
+      "usage": "Visual snapshot; keep option text and answer state accessible in native controls."
+    },
+    {
+      "file": "components/unit-banner.svg",
+      "png2x": "png2x/components--unit-banner.png",
+      "width": 480,
+      "height": 72,
+      "usage": "Unit banner reference; live title and unit number."
+    },
+    {
+      "file": "components/daily-goal-empty.svg",
+      "png2x": "png2x/components--daily-goal-empty.png",
+      "width": 240,
+      "height": 138,
+      "usage": "Live daily goal values in production."
+    },
+    {
+      "file": "components/daily-goal-complete.svg",
+      "png2x": "png2x/components--daily-goal-complete.png",
+      "width": 240,
+      "height": 138,
+      "usage": "Live daily goal values in production."
+    },
+    {
+      "file": "components/progress-empty.svg",
+      "png2x": "png2x/components--progress-empty.png",
+      "width": 360,
+      "height": 8,
+      "usage": "Visual snapshot; native progress semantics and live width in production."
+    },
+    {
+      "file": "components/progress-progress.svg",
+      "png2x": "png2x/components--progress-progress.png",
+      "width": 360,
+      "height": 8,
+      "usage": "Visual snapshot; native progress semantics and live width in production."
+    },
+    {
+      "file": "components/progress-complete.svg",
+      "png2x": "png2x/components--progress-complete.png",
+      "width": 360,
+      "height": 8,
+      "usage": "Visual snapshot; native progress semantics and live width in production."
+    },
+    {
+      "file": "components/feedback.svg",
+      "png2x": "png2x/components--feedback.png",
+      "width": 600,
+      "height": 96,
+      "usage": "Visual snapshot; actual solution and explanation are live."
+    },
+    {
+      "file": "artwork/mepamo-mascot.svg",
+      "png2x": "artwork/mepamo-mascot.png",
+      "width": 220,
+      "height": 224,
+      "usage": "New vector reconstruction from the supplied board; PNG exported from this SVG. Home width 180px; completion width 120px."
+    },
+    {
+      "file": "artwork/fuji-sticker.svg",
+      "png2x": "artwork/fuji-sticker.png",
+      "width": 200,
+      "height": 190,
+      "usage": "New vector reconstruction with transparent margins. PNG width 160 CSS px beside the path; preserve aspect ratio."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "colors": {
+    "evergreen": "#12564F",
+    "hover": "#1D6961",
+    "depth": "#0B3E39",
+    "mint": "#B5EAD3",
+    "selected": "#EFFAF5",
+    "gold": "#F8C547",
+    "goldDepth": "#C99B22",
+    "gray": "#E5E7EB",
+    "grayDepth": "#B9BEC5",
+    "muted": "#9CA3AF",
+    "ink": "#25313F",
+    "secondary": "#626D7E",
+    "line": "#D8E0E8",
+    "coral": "#EC7C88",
+    "correct": "#28845B",
+    "focus": "#4B9DDD"
+  },
+  "node": {
+    "canvas": [
+      96,
+      104
+    ],
+    "faceDiameter": 64,
+    "faceCenter": [
+      48,
+      46
+    ],
+    "depthCenter": [
+      48,
+      54
+    ],
+    "ringDiameter": 84,
+    "ringCenter": [
+      48,
+      51
+    ],
+    "pressedOffset": 6
+  },
+  "button": {
+    "faceHeight": 44,
+    "radius": 12,
+    "bottomDepth": 2
+  },
+  "callout": {
+    "canvas": [
+      120,
+      62
+    ]
+  },
+  "statusIcon": {
+    "size": 24,
+    "countGap": 6
+  },
+  "artwork": {
+    "mascotHomeWidth": 180,
+    "mascotCompleteWidth": 120,
+    "fujiWidth": 160
+  },
+  "typography": {
+    "wordmark": "Nunito 800",
+    "heading": "Nunito 700",
+    "body": "Inter 400"
+  }
+}

@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="400" height="328" viewBox="0 0 400 328" role="img" aria-labelledby="title description">
+  <title id="title">Waving mepamo mascot</title>
+  <desc id="description">A smiling mint-green mascot with cream eye panels, two antennae, and a waving hand. Its eyes follow the pointer when opened directly or embedded inline. A soft grey shadow sits beneath its feet. The background is transparent.</desc>
+  <defs>
+    <radialGradient id="mint" cx="38%" cy="27%" r="85%">
+      <stop offset="0" stop-color="#C8F8DF"/>
+      <stop offset="1" stop-color="#B5EAD3"/>
+    </radialGradient>
+    <radialGradient id="cream" cx="48%" cy="40%" r="80%">
+      <stop offset="0" stop-color="#FFF1CE"/>
+      <stop offset="1" stop-color="#FAE3BC"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground shadow: grey, independent of the mascot's mint fill. -->
+  <ellipse cx="196" cy="289" rx="100" ry="19" fill="#AFAFAF" opacity=".3"/>
+
+  <g stroke="#683919" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Antennae. -->
+    <path d="M188 55 Q183 35 169 26 M207 55 Q214 32 227 25" fill="none" stroke-width="11"/>
+
+    <!-- Legs and rounded feet. -->
+    <path d="M176 246 L162 268 C149 266 133 272 135 282 C137 293 157 297 171 290 C181 285 178 278 173 275 L188 252 Z" fill="url(#mint)"/>
+    <path d="M211 252 L222 275 C216 280 216 287 227 291 C240 296 258 291 260 283 C262 273 248 266 235 270 L225 245 Z" fill="url(#mint)"/>
+
+    <!-- Resting arm and hand. -->
+    <path d="M178 211 Q157 222 135 237" fill="none" stroke="#683919" stroke-width="7"/>
+    <circle cx="135" cy="237" r="15" fill="url(#mint)"/>
+
+    <!-- This group rotates around the right shoulder. -->
+    <g class="wave">
+      <path d="M225 209 Q258 216 295 197" fill="none" stroke="#683919" stroke-width="7"/>
+      <circle cx="295" cy="197" r="15" fill="url(#mint)"/>
+      <g class="wave-marks" stroke="#F5C400" stroke-width="11">
+        <path d="M310 164 L321 143 M323 174 L345 159 M329 189 L346 186" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Small body. -->
+    <path d="M175 202 C165 213 159 234 170 248 C182 263 215 262 228 248 C241 233 232 213 224 202 Z" fill="url(#mint)"/>
+
+    <!-- Rounded head and curved cream panels, updated to the supplied close-up reference. -->
+    <path d="M194 53 C221 53 245 61 263 77 C283 97 294 119 294 140 C294 164 284 183 267 195 C256 202 245 205 233 205 L173 207 C155 207 140 205 128 198 C102 185 86 165 86 140 C86 117 103 94 126 77 C148 60 170 53 194 53 Z" fill="url(#mint)"/>
+    <path d="M126 77 C159 108 173 159 128 198 C102 185 86 165 86 140 C86 117 103 94 126 77 Z" fill="url(#cream)"/>
+    <path d="M263 77 C232 108 228 157 267 195 C284 183 294 164 294 140 C294 119 283 97 263 77 Z" fill="url(#cream)"/>
+
+    <!-- Eyes and tiny nose marks. -->
+    <ellipse class="pupil" cx="131" cy="138" rx="8.5" ry="12.5" fill="#683919" stroke="none"/>
+    <ellipse class="pupil" cx="268" cy="135" rx="8.5" ry="12.5" fill="#683919" stroke="none"/>
+    <path d="M194 154 L194 163 M209 153 L210 162" fill="none" stroke-width="5"/>
+
+    <!-- Broad, three-tooth smile. -->
+    <path d="M170 178 L233 175 Q240 174 237 183 L233 205 L173 207 L166 184 Q164 178 170 178 Z" fill="#FFFEF5"/>
+    <path d="M188 178 L192 206.37 M211 177 L214 205.63" fill="none" stroke-width="4"/>
+  </g>
+  <!-- For page-wide tracking in your app, embed this SVG inline rather than as an img. -->
+</svg>
+

@@ -1,0 +1,70 @@
+{
+  "format_version": 1,
+  "files": [
+    {
+      "file": "LessonPopover.tsx",
+      "bytes": 4709,
+      "sha256": "58bd7eee63e9a8e91af2ab3a53160f477696d872b75e7c1eaeb6341c0fd6591f"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5751,
+      "sha256": "55a816eb0b19deb7c15527e0f1163562b3257d47a22fef1ad5975c98aec00c82"
+    },
+    {
+      "file": "VALIDATION.md",
+      "bytes": 1566,
+      "sha256": "80b15a499d60b7bfb28a6f018ab02708fb490d2ac56c4f6b1e6fb1110139945d"
+    },
+    {
+      "file": "confetti-left.svg",
+      "bytes": 2174,
+      "sha256": "347a5caffe05fd828f427416c13e09934c990f5c8c8679a5ced9a52ea2c02f01"
+    },
+    {
+      "file": "confetti-right.svg",
+      "bytes": 2202,
+      "sha256": "2dd23e40af1440383ef064e0c904b192dd4ebcdd5d6840611690f6365f2a8b25"
+    },
+    {
+      "file": "correct-check-static.svg",
+      "bytes": 373,
+      "sha256": "628104c087487dea192cf215e1ea4287ad1b7b6e92cc25b30583a1e889218cd9"
+    },
+    {
+      "file": "correct-check.svg",
+      "bytes": 653,
+      "sha256": "33a72ca3a4f985eacfa359ac3e52e366261a20a9537092ec3e208ef6ac62639d"
+    },
+    {
+      "file": "correct-chime.wav",
+      "bytes": 26504,
+      "sha256": "b0f22c8397b48f102826da9f30c9f278c2d2bf7b2423aa7b742545f02901ecd9"
+    },
+    {
+      "file": "feedback.css",
+      "bytes": 2417,
+      "sha256": "d01ce80a477988b4b08de53a59ffcf40c78125ea23c1c60f91ff7595b1e33397"
+    },
+    {
+      "file": "heart-break.svg",
+      "bytes": 2636,
+      "sha256": "6d083d3965f15a7199160f1cf862fd901acff28b4d6f990adc9706fcbadd368e"
+    },
+    {
+      "file": "incorrect-cross.svg",
+      "bytes": 661,
+      "sha256": "62f61aa793754727dc8008c7c29937f8b8e3d8faeca386133e26063b0d637d7b"
+    },
+    {
+      "file": "incorrect-tone.wav",
+      "bytes": 24740,
+      "sha256": "c48fab55f5b0130941325e8edff799569c87b6acbe5b606f1027f5d8c3de83ac"
+    },
+    {
+      "file": "preview.html",
+      "bytes": 5991,
+      "sha256": "1547ca2a75cff71d89414124c4ed875c560c9db8074262001551feedefa8831f"
+    }
+  ]
+}

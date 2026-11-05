@@ -1,0 +1,10 @@
+.node-highlight{position:absolute;left:6px;top:9px;width:84px;height:84px;border-radius:50%;pointer-events:none;z-index:2;background:conic-gradient(from 0deg,#8DD8B9 0deg,#B5EAD3 90deg,#F3FFF9 145deg,#8DD8B9 185deg,#B5EAD3 270deg,#F3FFF9 325deg,#8DD8B9 360deg);mask-image:radial-gradient(circle,transparent 61%,#000 63%);-webkit-mask-image:radial-gradient(circle,transparent 61%,#000 63%);animation:node-highlight-orbit 4s linear infinite}
+@keyframes node-highlight-orbit{to{transform:rotate(360deg)}}
+.node.available:hover .node-highlight{animation-duration:2.8s}
+.node.available:active .node-highlight{animation-play-state:paused}
+
+.home-footer{margin-top:18px}
+.home-footer>span{max-width:75%;line-height:1.7}
+@media(prefers-reduced-motion:reduce){.node-highlight{animation:none!important}}
+@media(max-width:759px){.home-footer>span{max-width:67%}}
+

@@ -1,0 +1,36 @@
+/* Tactile treatment is limited to lesson answers and Check/Continue. */
+.question-screen .option {
+ --answer-edge:#DCE3E1;
+ border:2px solid var(--answer-edge);border-radius:14px;min-height:52px;
+ background:#fff;box-shadow:0 3px 0 var(--answer-edge);
+ transition:transform 90ms ease-out,box-shadow 90ms ease-out,background-color 140ms ease,border-color 140ms ease;
+}
+.question-screen .option.selected:not(:disabled){--answer-edge:#116B6A;background:#E5F6ED;color:#116B6A}
+.question-screen .option[data-result="correct"]{--answer-edge:#116B6A}
+.question-screen .option[data-result="incorrect"]{--answer-edge:#D94F43}
+.question-screen .option:disabled{opacity:1;cursor:default}
+.lesson-footer .primary:is([data-action="check"],[data-action="continue"]){
+ --control-edge:#0B3E39;background:var(--green);color:#fff;border-radius:14px;
+ box-shadow:0 4px 0 var(--control-edge);
+ transition:transform 90ms ease-out,box-shadow 90ms ease-out,background-color 140ms ease;
+}
+@media(hover:hover){
+ .question-screen .option:not(:disabled):not(.selected):hover{--answer-edge:#B9CBC6;background:#F7FAF8}
+ .lesson-footer .primary:is([data-action="check"],[data-action="continue"]):hover:not(:disabled){background:#1D6961}
+}
+.question-screen .option:not(:disabled):is(:active,.is-key-pressed){transform:translateY(2px);box-shadow:0 1px 0 var(--answer-edge)}
+.lesson-footer .primary:is([data-action="check"],[data-action="continue"]):not(:disabled):is(:active,.is-key-pressed){transform:translateY(2px);box-shadow:0 2px 0 var(--control-edge)}
+.lesson-footer .primary:is([data-action="check"],[data-action="continue"]):disabled{background:#E5E7EB;color:#626D7E;border-color:#E5E7EB;box-shadow:0 4px 0 #B9BEC5;transform:none;transition:none;cursor:default}
+.question-screen .option:focus-visible{outline:2px solid #4B9DDD;outline-offset:4px}
+.question-screen .option.is-nudging{animation:answer-nudge 190ms ease-out}
+.question-screen .option .is-result-pop{animation:answer-check-pop 200ms ease-out}
+@keyframes answer-nudge{0%,100%{transform:translateX(0)}25%{transform:translateX(-2px)}65%{transform:translateX(2px)}}
+@keyframes answer-check-pop{from{transform:scale(.85)}to{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){
+ .question-screen .option,.lesson-footer .primary:is([data-action="check"],[data-action="continue"]){transition:none;animation:none}
+ .question-screen .option:not(:disabled):is(:active,.is-key-pressed),.lesson-footer .primary:is([data-action="check"],[data-action="continue"]):not(:disabled):is(:active,.is-key-pressed){transform:none}
+ .question-screen .option .is-result-pop{animation:none}
+}
+@starting-style {
+ .question-screen .option.selected:not(:disabled){background:#fff;border-color:#DCE3E1}
+}

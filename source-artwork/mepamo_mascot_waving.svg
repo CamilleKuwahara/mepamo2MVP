@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="328" viewBox="0 0 400 328" role="img" aria-labelledby="title description">
+  <title id="title">Waving mepamo mascot</title>
+  <desc id="description">A smiling mint-green mascot with cream eye panels, two antennae, and a waving hand. Its eyes follow the pointer when opened directly or embedded inline. A soft grey shadow sits beneath its feet. The background is transparent.</desc>
+  <style>
+    .wave {
+      transform-origin: 230px 209px;
+      animation: wave 2.4s ease-in-out infinite;
+    }
+    .wave-marks { animation: greeting 2.4s ease-in-out infinite; }
+    .pupil { transition: transform 90ms ease-out; }
+    @keyframes wave {
+      0%, 65%, 100% { transform: rotate(0deg); }
+      12%, 36% { transform: rotate(-13deg); }
+      24%, 48% { transform: rotate(9deg); }
+    }
+    @keyframes greeting {
+      0%, 60%, 100% { opacity: .65; }
+      12%, 36% { opacity: 1; }
+      24%, 48% { opacity: .8; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wave, .wave-marks { animation: none; }
+      .pupil { transition: none; }
+    }
+  </style>
+  <defs>
+    <radialGradient id="mint" cx="38%" cy="27%" r="85%">
+      <stop offset="0" stop-color="#C8F8DF"/>
+      <stop offset="1" stop-color="#B5EAD3"/>
+    </radialGradient>
+    <radialGradient id="cream" cx="48%" cy="40%" r="80%">
+      <stop offset="0" stop-color="#FFF1CE"/>
+      <stop offset="1" stop-color="#FAE3BC"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground shadow: grey, independent of the mascot's mint fill. -->
+  <ellipse cx="196" cy="289" rx="100" ry="19" fill="#AFAFAF" opacity=".3"/>
+
+  <g stroke="#683919" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Antennae. -->
+    <path d="M188 55 Q183 35 169 26 M207 55 Q214 32 227 25" fill="none" stroke-width="11"/>
+
+    <!-- Legs and rounded feet. -->
+    <path d="M176 246 L162 268 C149 266 133 272 135 282 C137 293 157 297 171 290 C181 285 178 278 173 275 L188 252 Z" fill="url(#mint)"/>
+    <path d="M211 252 L222 275 C216 280 216 287 227 291 C240 296 258 291 260 283 C262 273 248 266 235 270 L225 245 Z" fill="url(#mint)"/>
+
+    <!-- Resting arm and hand. -->
+    <path d="M176 206 Q155 216 139 230 L145 238 Q162 224 181 217 Z" fill="url(#mint)"/>
+    <circle cx="135" cy="237" r="15" fill="url(#mint)"/>
+
+    <!-- This group rotates around the right shoulder. -->
+    <g class="wave">
+      <path d="M224 205 Q252 210 282 191 L289 200 Q256 218 225 213 Z" fill="url(#mint)"/>
+      <circle cx="295" cy="197" r="15" fill="url(#mint)"/>
+      <g class="wave-marks" stroke="#F5C400" stroke-width="11">
+        <path d="M310 164 L321 143 M323 174 L345 159 M329 189 L346 186" fill="none"/>
+      </g>
+    </g>
+
+    <!-- Small body. -->
+    <path d="M175 202 C165 213 159 234 170 248 C182 263 215 262 228 248 C241 233 232 213 224 202 Z" fill="url(#mint)"/>
+
+    <!-- Head and cream eye panels. -->
+    <path d="M86 140 C86 102 126 54 187 53 C247 50 290 90 294 130 C301 176 270 205 233 205 L173 207 C123 209 84 194 86 140 Z" fill="url(#mint)"/>
+    <path d="M126 77 C163 112 170 164 128 198 C101 189 84 167 86 140 C87 117 103 92 126 77 Z" fill="url(#cream)"/>
+    <path d="M263 77 C236 108 229 156 267 191 C288 177 297 157 294 134 C292 112 280 90 263 77 Z" fill="url(#cream)"/>
+
+    <!-- Eyes and tiny nose marks. -->
+    <ellipse class="pupil" cx="131" cy="138" rx="8.5" ry="12.5" fill="#683919" stroke="none"/>
+    <ellipse class="pupil" cx="268" cy="135" rx="8.5" ry="12.5" fill="#683919" stroke="none"/>
+    <path d="M194 154 L194 163 M209 153 L210 162" fill="none" stroke-width="5"/>
+
+    <!-- Broad, three-tooth smile. -->
+    <path d="M170 178 L233 175 Q240 174 237 183 L233 205 L173 207 L166 184 Q164 178 170 178 Z" fill="#FFFEF5"/>
+    <path d="M188 178 L192 206.37 M211 177 L214 205.63" fill="none" stroke-width="4"/>
+  </g>
+  <!-- For page-wide tracking in your app, embed this SVG inline rather than as an img. -->
+  <script><![CDATA[
+    (() => {
+      const svg = document.currentScript.ownerSVGElement;
+      const pupils = Array.from(svg.querySelectorAll('.pupil'));
+      const eyes = pupils.map(node => ({
+        node,
+        x: Number(node.getAttribute('cx')),
+        y: Number(node.getAttribute('cy'))
+      }));
+      let pendingFrame = 0;
+      let pointer = null;
+
+      function paint() {
+        pendingFrame = 0;
+        const matrix = svg.getScreenCTM();
+        if (!pointer || !matrix) return;
+        const point = svg.createSVGPoint();
+        point.x = pointer.x;
+        point.y = pointer.y;
+        const local = point.matrixTransform(matrix.inverse());
+        for (const eye of eyes) {
+          const dx = local.x - eye.x;
+          const dy = local.y - eye.y;
+          // Smoothly limit travel so the pupils stay inside the cream panels.
+          const distance = Math.hypot(dx, dy, 100);
+          eye.node.style.transform = `translate(${9 * dx / distance}px, ${7 * dy / distance}px)`;
+        }
+      }
+
+      function reset() {
+        pointer = null;
+        cancelAnimationFrame(pendingFrame);
+        pendingFrame = 0;
+        for (const eye of eyes) eye.node.style.transform = 'translate(0px, 0px)';
+      }
+
+      document.addEventListener('pointermove', event => {
+        if (event.pointerType === 'touch') return;
+        pointer = {x: event.clientX, y: event.clientY};
+        if (!pendingFrame) pendingFrame = requestAnimationFrame(paint);
+      }, {passive: true});
+      document.documentElement.addEventListener('pointerleave', reset);
+      window.addEventListener('blur', reset);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) reset();
+      });
+    })();
+  ]]></script>
+</svg>

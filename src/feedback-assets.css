@@ -1,0 +1,26 @@
+/* Load into the existing app; map selectors to its components. */
+.mepamo-answer{position:relative;isolation:isolate;transform-origin:center;}
+.mepamo-answer[data-result="correct"]{background:#EFF9F4;border-color:#116B6A;}
+.mepamo-answer[data-result="incorrect"]{background:#FFF2EE;border-color:#D94F43;}
+.mepamo-answer.is-celebrating{animation:mepamo-card-settle 250ms ease-out;}
+@keyframes mepamo-card-settle{0%,100%{transform:scale(1)}45%{transform:scale(1.02)}}
+.mepamo-status{display:block;width:28px;height:28px;flex:0 0 28px;}
+.mepamo-confetti{position:absolute;top:-65px;width:160px;height:140px;pointer-events:none;z-index:2;}
+.mepamo-confetti--left{left:-80px;}
+.mepamo-confetti--right{right:-80px;}
+/* Clip decorative overflow at viewport, NOT at the answer card. */
+.mepamo-lesson{overflow-x:clip;}
+.mepamo-feedback-slot{height:112px;position:relative;display:grid;place-items:center;}
+.mepamo-heart{display:block;width:104px;height:104px;pointer-events:none;}
+/* The drawing itself is ~67px wide within a 104px SVG canvas. */
+.mepamo-why{color:#116B6A;background:none;border:0;font:inherit;cursor:pointer;padding:12px 0;}
+/* Render popover in a portal so path ancestors cannot clip it. Position in JS. */
+.mepamo-popover{position:fixed;z-index:50;box-sizing:border-box;width:310px;max-width:calc(100vw - 24px);padding:20px;border-radius:18px;color:#fff;background:#116B6A;box-shadow:0 6px 16px #153f3e14;animation:mepamo-popover-in 140ms ease-out;}
+.mepamo-popover__arrow{position:absolute;top:-7px;width:14px;height:14px;background:#116B6A;transform:translateX(-50%) rotate(45deg);}
+.mepamo-popover[data-side="above"] .mepamo-popover__arrow{top:auto;bottom:-7px;}
+.mepamo-popover h3{position:relative;margin:0 0 6px;font:800 20px/1.3 Nunito,ui-rounded,system-ui,sans-serif;}
+.mepamo-popover p{position:relative;margin:4px 0;font:500 15px/1.45 Nunito,ui-rounded,system-ui,sans-serif;}
+.mepamo-popover button{position:relative;display:block;width:100%;min-height:46px;margin-top:16px;border:0;border-radius:12px;background:#fff;color:#116B6A;font:800 16px/1.2 Nunito,ui-rounded,system-ui,sans-serif;cursor:pointer;}
+.mepamo-popover button:focus-visible{outline:3px solid #FDBD2B;outline-offset:3px;}
+@keyframes mepamo-popover-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.mepamo-answer.is-celebrating,.mepamo-popover{animation:none}.mepamo-confetti,.mepamo-heart{display:none}}

@@ -1,0 +1,11 @@
+﻿import fs from 'node:fs';
+let art=fs.readFileSync('src/art.ts','utf8');
+art=art.replace(/export const fuji=.*?;\r?\n/, 'export const fuji=`<span data-mepamo-fuji></span>`;\n').replace(/export const mascot=.*?;\r?\n/, 'export const mascot=`<span data-mepamo-mascot></span>`;\n');
+fs.writeFileSync('src/art.ts',art);
+let main=fs.readFileSync('src/main.ts','utf8');
+main=main.replace("import {icon,fuji,mascot,nodeArt} from './art';", "import {icon,fuji,mascot,nodeArt} from './art';\nimport {mountArtwork} from './components/mountArtwork';\nlet unmountArtwork: () => void = () => {};");
+main=main.replace('function render(focus=true){','function render(focus=true){\n unmountArtwork();');
+main=main.replace("app.innerHTML=top+(screen==='home'?home():screen==='results'?results():lesson());", "app.innerHTML=top+(screen==='home'?home():screen==='results'?results():lesson());\n unmountArtwork=mountArtwork(app);");
+main=main.replace('Illustrations are recreations of the handoff references.', 'Artwork uses the supplied mepamo mascot and Mount Fuji illustrations.');
+main+=`\nfunction suspendArtwork(){unmountArtwork()}\nfunction resumeArtwork(event:PageTransitionEvent){if(event.persisted)unmountArtwork=mountArtwork(app)}\nwindow.addEventListener('pagehide',suspendArtwork);\nwindow.addEventListener('pageshow',resumeArtwork);\nif(import.meta.hot)import.meta.hot.dispose(()=>{unmountArtwork();window.removeEventListener('pagehide',suspendArtwork);window.removeEventListener('pageshow',resumeArtwork)});\n`;
+fs.writeFileSync('src/main.ts',main);
