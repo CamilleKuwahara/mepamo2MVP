@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "tokyo-discovery-lesson-1",
+  "title": "Tokyo: From a castle to the clouds",
+  "locale": "en",
+  "version": "2026-11-06-reviewed-flow",
+  "audience": "Curious beginners who may know nothing about Japan.",
+  "totalNarrationSeconds": 86.187,
+  "runtimeNote": "m3 is a short historical bridge into m4, together forming the Tokyo Tower learning section. Preserve that bridge before the timeline tests 1868.",
+  "narrationTimings": "audio/narration/word-timings.json",
+  "sequence": [
+    "m1",
+    "q1-edo",
+    "m2",
+    "q2-ieyasu",
+    "m3",
+    "m4",
+    "q3-tokyo-tower",
+    "m5",
+    "q4-skytree",
+    "q5-timeline",
+    "complete"
+  ],
+  "modules": [
+    {
+      "id": "m1",
+      "type": "narratedModule",
+      "title": "From a castle to the clouds.",
+      "body": "How does a castle town become a city of giant towers?\n\nWelcome to Tokyo, Japan’s capital—once called Edo. Its story reaches back to 1457, when the warrior Ōta Dōkan built a castle here.",
+      "audioClipId": "story-0",
+      "image": "/lesson-1/assets/scenes/edo-castle-town.png",
+      "imageAlt": "Illustrated Edo castle town beside a moat",
+      "containsBakedMascot": false
+    },
+    {
+      "id": "m2",
+      "type": "narratedModule",
+      "title": "A ruler makes his home.",
+      "body": "Tokugawa Ieyasu made Edo Castle his home in 1590. In 1603, he established his government as shogun—Japan’s military ruler.\n\nThe emperor remained in Kyoto. Around Edo’s government, a growing city needed homes, shops, streets, and aqueducts to carry water.",
+      "audioClipId": "story-1",
+      "image": "/lesson-1/assets/scenes/ieyasu-portrait.png",
+      "imageAlt": "Illustrated portrait of Tokugawa Ieyasu",
+      "containsBakedMascot": false
+    },
+    {
+      "id": "m3",
+      "type": "narratedModule",
+      "title": "A new name. A growing city.",
+      "body": "In 1868, Edo became Tokyo, meaning “Eastern Capital.” Emperor Meiji established his residence here the following year.\n\nToday, different neighborhoods reveal different sides of Tokyo: Asakusa’s temples and traditional shops, Akihabara’s electronics and anime—Japanese animation—and Shibuya’s shopping and nightlife.",
+      "audioClipId": "story-2",
+      "image": "/lesson-1/assets/scenes/japan-tokyo-introduction-original.png",
+      "imageAlt": "Illustrated map of Japan introducing Tokyo with Mepamo-kun",
+      "containsBakedMascot": true
+    },
+    {
+      "id": "m4",
+      "type": "narratedModule",
+      "title": "Look up.",
+      "body": "Completed in 1958, Tokyo Tower stands 333 meters tall. It helped send television signals across the city and became a symbol of Japan’s postwar recovery.\n\nIts distinctive international orange and white colors help make it visible to aircraft.",
+      "audioClipId": "story-3",
+      "image": "/lesson-1/assets/scenes/tokyo-tower-landmark.png",
+      "imageAlt": "Orange-and-white Tokyo Tower above city buildings",
+      "containsBakedMascot": false
+    },
+    {
+      "id": "m5",
+      "type": "narratedModule",
+      "title": "A skyline with a purpose.",
+      "body": "As buildings grew taller, they could interfere with broadcasts. Tokyo Skytree opened in 2012, reaching 634 meters—almost twice Tokyo Tower’s height.\n\nIt helps signals reach beyond surrounding high-rises, while observation decks give visitors sweeping views.\n\nA castle helped shape the city. Towers helped connect it.",
+      "audioClipId": "story-4",
+      "image": "/lesson-1/assets/scenes/skytree-module.png",
+      "imageAlt": "Pale Tokyo Skytree above the city",
+      "containsBakedMascot": false
+    }
+  ],
+  "quizzes": [
+    {
+      "id": "q1-edo",
+      "type": "wordBank",
+      "title": "Complete the sentence.",
+      "instruction": "Tap a word to fill the blank.",
+      "sentenceBefore": "Before it was called Tokyo, the city was known as",
+      "sentenceAfter": ".",
+      "options": [
+        {
+          "id": "edo",
+          "text": "Edo"
+        },
+        {
+          "id": "kyoto",
+          "text": "Kyoto"
+        },
+        {
+          "id": "osaka",
+          "text": "Osaka"
+        }
+      ],
+      "correctAnswer": "edo",
+      "correctFeedback": {
+        "title": "That’s right!",
+        "body": "Tokyo was once called Edo."
+      },
+      "incorrectFeedback": {
+        "title": "A little clarification.",
+        "body": "The city was called Edo before it became Tokyo."
+      },
+      "teachingPrerequisite": [
+        "m1"
+      ],
+      "reference": "references/screens/02-practice-edo-word-blocks.png"
+    },
+    {
+      "id": "q2-ieyasu",
+      "type": "textChoice",
+      "title": "Who was Tokugawa Ieyasu?",
+      "instruction": "Choose one answer.",
+      "image": "/lesson-1/assets/scenes/ieyasu-portrait.png",
+      "imageAlt": "Illustrated portrait of Tokugawa Ieyasu",
+      "options": [
+        {
+          "id": "shogun",
+          "text": "A military ruler called a shogun"
+        },
+        {
+          "id": "emperor",
+          "text": "An emperor who lived in Kyoto"
+        },
+        {
+          "id": "merchant",
+          "text": "A merchant who sold goods in Edo"
+        }
+      ],
+      "correctAnswer": "shogun",
+      "correctFeedback": {
+        "title": "Exactly!",
+        "body": "Ieyasu was a shogun. He governed from Edo, while the emperor remained in Kyoto."
+      },
+      "incorrectFeedback": {
+        "title": "A little clarification.",
+        "body": "Ieyasu was a shogun—a military ruler. The emperor was a different person, living in Kyoto."
+      },
+      "teachingPrerequisite": [
+        "m2"
+      ],
+      "reference": "references/screens/03-practice-ieyasu-text-cards.png"
+    },
+    {
+      "id": "q3-tokyo-tower",
+      "type": "pictureChoice",
+      "title": "What did Tokyo Tower help bring to people’s homes?",
+      "instruction": "Choose one answer.",
+      "options": [
+        {
+          "id": "television",
+          "text": "Television broadcasts",
+          "image": "/lesson-1/assets/quiz/television.png"
+        },
+        {
+          "id": "water",
+          "text": "Clean water",
+          "image": "/lesson-1/assets/quiz/faucet.png"
+        },
+        {
+          "id": "electricity",
+          "text": "Electricity",
+          "image": "/lesson-1/assets/quiz/lightbulb.png"
+        }
+      ],
+      "correctAnswer": "television",
+      "correctFeedback": {
+        "title": "Exactly!",
+        "body": "Tokyo Tower broadcast television signals across the city, helping people watch programs at home."
+      },
+      "incorrectFeedback": {
+        "title": "A little clarification.",
+        "body": "Tokyo Tower helped broadcast television signals. It did not supply water or electricity to homes."
+      },
+      "teachingPrerequisite": [
+        "m4"
+      ],
+      "reference": "references/screens/04-practice-tokyo-tower-picture-cards.png"
+    },
+    {
+      "id": "q4-skytree",
+      "type": "textChoice",
+      "title": "Why did Tokyo need a taller broadcasting tower?",
+      "instruction": "Choose one answer.",
+      "image": "/lesson-1/assets/scenes/skytree-module.png",
+      "imageAlt": "Illustrated Tokyo Skytree rising above nearby buildings",
+      "options": [
+        {
+          "id": "high-rises",
+          "text": "Nearby high-rises could interfere with television broadcasts."
+        },
+        {
+          "id": "visitors",
+          "text": "Tokyo Tower had stopped attracting visitors."
+        },
+        {
+          "id": "underground",
+          "text": "Television signals needed to travel underground."
+        }
+      ],
+      "correctAnswer": "high-rises",
+      "correctFeedback": {
+        "title": "Exactly!",
+        "body": "Skytree’s greater height helps broadcast signals clear nearby buildings and reach more homes."
+      },
+      "incorrectFeedback": {
+        "title": "A little clarification.",
+        "body": "Nearby high-rises could interfere with television broadcasts. Skytree’s greater height helps signals clear those buildings."
+      },
+      "teachingPrerequisite": [
+        "m5"
+      ],
+      "reference": "references/screens/05-practice-skytree-reasoning.png"
+    },
+    {
+      "id": "q5-timeline",
+      "type": "order",
+      "title": "Put Tokyo’s story in order.",
+      "instruction": "Tap the events from earliest to latest.",
+      "items": [
+        {
+          "id": "skytree-opens",
+          "text": "Skytree opens",
+          "image": "/lesson-1/assets/scenes/skytree-landmark.png"
+        },
+        {
+          "id": "edo-renamed",
+          "text": "Edo is renamed Tokyo",
+          "image": "/lesson-1/assets/scenes/edo-castle-town.png"
+        },
+        {
+          "id": "tower-completed",
+          "text": "Tokyo Tower is completed",
+          "image": "/lesson-1/assets/scenes/tokyo-tower-landmark.png"
+        }
+      ],
+      "correctOrder": [
+        "edo-renamed",
+        "tower-completed",
+        "skytree-opens"
+      ],
+      "correctFeedback": {
+        "title": "You’ve connected the story!",
+        "body": "Edo became Tokyo in 1868. Tokyo Tower followed in 1958, and Skytree opened in 2012 as broadcasting needs changed."
+      },
+      "incorrectFeedback": {
+        "title": "Here’s how the story unfolded.",
+        "body": "First, Edo was renamed Tokyo in 1868. Tokyo Tower was completed in 1958. Skytree opened in 2012."
+      },
+      "teachingPrerequisite": [
+        "m3",
+        "m4",
+        "m5"
+      ],
+      "reference": "references/screens/06-practice-tokyo-timeline.png"
+    }
+  ],
+  "complete": {
+    "id": "complete",
+    "title": "Now the skyline has a story.",
+    "body": "A castle helped shape the city. Towers helped connect it.",
+    "image": "assets/brand/completed-badge-original.png",
+    "integration": "Reuse existing project completion screen, progress and rewards."
+  },
+  "audio": {
+    "voiceDuringPractice": false,
+    "correctEffect": "audio/feedback/correct-celebration.mp3",
+    "incorrectEffect": "audio/feedback/incorrect-neutral.mp3",
+    "preferExistingProjectFeedbackSounds": true
+  },
+  "branding": {
+    "preferExistingProjectTokens": true,
+    "logo": "assets/brand/mepamo-logo-original.png",
+    "mascot": "assets/brand/mepamo-kun-original.png",
+    "noCardNumbering": true
+  }
+}

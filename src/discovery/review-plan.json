@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "lesson1Review": [],
+  "reviewAt": "after five topic questions, before completion",
+  "reviews": [
+    {
+      "lesson": 2,
+      "questionRefs": [
+        "T2",
+        "T5"
+      ],
+      "screenCount": 2
+    },
+    {
+      "lesson": 3,
+      "questionRefs": [
+        "T1",
+        "K4"
+      ],
+      "screenCount": 2
+    },
+    {
+      "lesson": 4,
+      "questionRefs": [
+        "K1",
+        "O2"
+      ],
+      "screenCount": 2
+    },
+    {
+      "lesson": 5,
+      "questionRefs": [
+        "O4",
+        "F4",
+        "T2"
+      ],
+      "screenCount": 3
+    }
+  ],
+  "totalReviewAppearances": 9,
+  "questionIdentity": "Resolve questionRef to the same canonical record used for original practice; appearances have distinct instanceIds.",
+  "adaptivity": "Default fixed schedule. No adaptive substitutions required."
+}

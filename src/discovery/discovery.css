@@ -1,0 +1,106 @@
+/* Lesson variants reuse the existing shell, typography, cards and color tokens. */
+.discovery-lesson .discovery-artworks{display:flex;align-items:center;justify-content:center;gap:12px;min-width:0}
+.discovery-lesson .discovery-artworks img{width:calc((100% - 24px)/var(--art-count));max-width:340px;max-height:250px;object-fit:contain;border-radius:12px}
+.discovery-lesson .discovery-text-only{grid-template-columns:1fr;max-width:720px;margin-inline:auto}
+.discovery-stations{display:flex;flex-wrap:wrap;list-style:none;gap:10px;padding:0;margin:18px 0;font-size:16px;color:var(--green)}
+.discovery-stations li{border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.discovery-scenario{font-size:15px;line-height:1.5;margin:8px 0 12px;max-width:760px}
+.discovery-with-art{display:grid;grid-template-columns:140px minmax(0,1fr);gap:20px;align-items:center}
+.discovery-question-art img{width:100%;height:120px;object-fit:contain;border-radius:10px}
+.discovery-lesson .discovery-activity .option:not(.tokyo-picture){grid-template-columns:28px minmax(0,1fr)}
+.discovery-lesson .discovery-activity .option .answer-label{grid-column:2}
+.discovery-matching{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:12px 0}
+.discovery-match-column{display:grid;gap:10px;grid-auto-rows:1fr;min-width:0}
+.discovery-lesson .discovery-match-card{display:flex;align-items:center;gap:10px;min-width:0;width:100%;position:relative;overflow-wrap:normal;font-size:14px;line-height:1.4}
+.discovery-match-card img:not(.mepamo-status){width:80px;height:64px;object-fit:contain;border-radius:8px;flex-shrink:0}
+.discovery-match-card>span:not(.mepamo-status){min-width:0;flex:1}
+.discovery-match-card small{display:block;font-size:11px;line-height:1.35;margin-top:4px;color:var(--green)}
+.discovery-lesson .discovery-order .tokyo-timeline,.discovery-lesson .discovery-order .tokyo-bank{grid-template-columns:repeat(var(--slots),minmax(0,1fr))}
+.discovery-unit-check{margin:16px auto 24px;max-width:420px;text-align:center}
+.discovery-unit-check p{font-size:13px;color:var(--muted);margin:8px 0}
+.discovery-lesson .tokyo-feedback:has(.mepamo-status[aria-label="Incorrect answer"]){padding-right:0}
+.discovery-lesson .mepamo-feedback-slot{left:0;right:auto;width:28px}
+.discovery-lesson .mepamo-heart{width:28px;height:28px}
+@media(max-width:759px){
+ .discovery-lesson .discovery-artworks img{max-height:120px;max-width:230px}
+ .discovery-lesson .tokyo-story-grid{grid-template-columns:1fr}
+ .discovery-scenario{font-size:13px;line-height:1.4;margin:6px 0}
+ .discovery-with-art{grid-template-columns:1fr;gap:6px}
+ .discovery-question-art img{height:55px}
+ .discovery-matching{gap:8px;margin:8px 0}
+ .discovery-match-column{gap:6px}
+ .discovery-lesson .discovery-match-card{padding:7px;font-size:12px;line-height:1.3;flex-wrap:wrap;gap:5px}
+ .discovery-match-card img:not(.mepamo-status){width:44px;height:35px}
+ .discovery-match-card small{font-size:10px;line-height:1.2}
+ .discovery-lesson .discovery-activity .option:not(.tokyo-picture){font-size:13px;padding:7px 9px;gap:5px 8px;line-height:1.35}
+ .discovery-lesson .discovery-order:has(.tokyo-bank img) .tokyo-picture img{height:45px}
+ .discovery-stations{font-size:12px;gap:6px;margin:12px 0}
+ .discovery-stations li{padding:6px 8px}
+}
+@media(max-height:650px){
+ .discovery-lesson .discovery-artworks img{max-height:90px}
+ .discovery-lesson .tokyo-feedback{font-size:12px;line-height:1.35}
+ .discovery-lesson .tokyo-feedback p{line-height:1.35}
+ .discovery-lesson .assignment-count{font-size:11px;margin:6px 0}
+}
+@media(max-width:359px) and (max-height:650px){
+ .discovery-lesson h1{font-size:19px}
+ .discovery-lesson .discovery-artworks img{max-height:65px}
+ .discovery-lesson .discovery-match-card{font-size:11px;padding:5px;gap:4px}
+ .discovery-match-card img:not(.mepamo-status){width:35px;height:28px}
+ .discovery-lesson .discovery-activity .option:not(.tokyo-picture){font-size:12px;min-height:44px;padding:5px 7px}
+}
+@media(max-height:450px) and (min-width:600px){
+ .discovery-lesson .tokyo-story-grid{grid-template-columns:160px minmax(0,1fr)}
+ .discovery-lesson .discovery-text-only{grid-template-columns:1fr}
+ .discovery-lesson .discovery-artworks img{max-height:140px}
+ .discovery-scenario{font-size:12px;line-height:1.3;margin:4px 0}
+ .discovery-with-art{grid-template-columns:100px minmax(0,1fr)}
+ .discovery-lesson .discovery-activity .option:not(.tokyo-picture){min-height:40px;padding:4px 8px;font-size:12px;gap:2px 8px}
+ .discovery-lesson .discovery-activity .option:has(.answer-label){grid-template-columns:28px minmax(0,1fr) 88px}
+ .discovery-lesson .discovery-activity .option .answer-label{grid-column:3;font-size:10px}
+ .discovery-matching{margin:4px 0;gap:12px}
+ .discovery-match-column{gap:4px}
+ .discovery-lesson .discovery-match-card{min-height:42px;padding:4px 8px;font-size:12px}
+ .discovery-match-card img:not(.mepamo-status){width:40px;height:30px}
+ .discovery-match-card small{display:inline;font-size:10px;margin-left:4px}
+}
+
+.discovery-match-results{display:grid;gap:8px;margin:12px 0}
+.discovery-lesson .discovery-match-result{display:flex;align-items:center;gap:12px;padding:8px 12px;font-size:14px;line-height:1.35}
+.discovery-match-result img:not(.mepamo-status){width:66px;height:48px;object-fit:contain;border-radius:6px}
+.discovery-match-result>div{flex:1;min-width:0}
+.discovery-match-result strong,.discovery-match-result span{display:block}
+.discovery-match-result strong{font-weight:500}
+.discovery-match-result>div>span{font-size:12px;color:var(--green);margin-top:3px}
+@media(max-width:759px){
+ .discovery-lesson .discovery-match-result{font-size:12px;padding:6px 8px;gap:8px}
+ .discovery-match-result img:not(.mepamo-status){width:42px;height:36px}
+ .discovery-match-result>div>span{font-size:11px}
+ .discovery-match-results{gap:6px;margin:8px 0}
+}
+@media(max-height:450px){
+ .discovery-match-results{gap:4px;margin:4px 0}
+ .discovery-lesson .discovery-match-result{padding:4px 8px;min-height:40px;font-size:12px}
+ .discovery-match-result img:not(.mepamo-status){width:40px;height:30px}
+ .discovery-match-result strong,.discovery-match-result>div>span{display:inline;margin-right:6px}
+}
+
+@media(max-width:359px) and (max-height:650px){
+ .discovery-question-art img{height:36px}
+ .discovery-lesson .discovery-practice .tokyo-feedback{margin-top:6px;padding:6px 0}
+}
+
+@media(max-width:359px) and (max-height:650px){
+ .discovery-match-card img:not(.mepamo-status){width:24px;height:24px}
+ .discovery-lesson .discovery-match-card{gap:3px}
+}
+
+@media(max-height:450px) and (min-width:600px){
+ .discovery-lesson .discovery-activity .options{margin-top:6px}
+ .discovery-lesson .tokyo-feedback p{display:inline;margin:0}
+ .discovery-lesson .tokyo-feedback strong{margin-right:6px}
+}
+
+.discovery-audio-status{font-size:12px;line-height:1.25;color:var(--muted);margin:8px 0 0}
+@media(max-width:359px) and (max-height:650px){.discovery-lesson .discovery-artworks img{max-height:55px}.discovery-lesson .discovery-stations{margin:6px 0;padding:0}.discovery-audio-status{margin-top:4px;font-size:11px}}

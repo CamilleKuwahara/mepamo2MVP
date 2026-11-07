@@ -1,0 +1,127 @@
+.tokyo-story{text-align:center}.tokyo-story-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:32px;align-items:center;margin:24px 0}.tokyo-scene{position:relative;max-width:360px;margin:auto}.tokyo-scene>img:first-child{display:block;max-width:100%;max-height:340px;object-fit:contain;border-radius:20px}.tokyo-scene>img:nth-child(2){position:absolute;width:25%;height:auto;bottom:4%;left:4%}.tokyo-transcript{white-space:pre-wrap;text-align:left;font-size:20px;line-height:1.7}.spoken-word{background:var(--mint);color:var(--green);border-radius:4px}.tokyo-playback{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.tokyo-playback button{padding:10px 12px}.tokyo-playback input{width:100px;accent-color:var(--green)}[data-audio-time]{font-size:12px;font-variant-numeric:tabular-nums}.tokyo-choice-grid{display:grid;grid-template-columns:180px minmax(0,1fr);gap:24px;align-items:center}.tokyo-question-art img{width:100%;max-height:240px;object-fit:contain}.tokyo-pictures,.tokyo-timeline,.tokyo-bank{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}.tokyo-picture{display:flex!important;flex-direction:column;justify-content:center;align-items:center;text-align:center!important;gap:10px;min-width:0;width:100%;position:relative}.tokyo-picture img:not(.mepamo-status){width:100%;height:110px;object-fit:contain}.tokyo-picture .mepamo-status{width:24px;height:24px}.tokyo-slot{min-height:150px;border:2px dashed var(--line);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--muted)}.tokyo-slot:has(button){border:0}.tokyo-slot button{height:100%}.tokyo-feedback{display:flex;align-items:flex-start;gap:12px;border-top:1px solid var(--line);padding:18px 0;margin-top:18px;line-height:1.6}.tokyo-feedback p{margin:6px 0}.tokyo-feedback .mepamo-status{flex-shrink:0}.tokyo-practice h1{font-size:28px}.tokyo-practice .feedback-area{min-height:0}.tokyo-practice .bank-placeholder{min-height:130px}.lesson-shell:has(.tokyo-story){max-width:1040px}.lesson-shell:has(.tokyo-story) .lesson-footer{flex-wrap:wrap;gap:12px}.lesson-shell:has(.tokyo-story) .lesson-body{max-width:900px}
+@media(max-width:759px){.tokyo-story-grid{grid-template-columns:1fr;gap:18px;margin:16px 0}.tokyo-scene>img:first-child{max-height:190px}.tokyo-transcript{font-size:17px;line-height:1.6}.tokyo-choice-grid{grid-template-columns:1fr;gap:8px}.tokyo-question-art img{height:110px}.tokyo-picture img:not(.mepamo-status){height:70px}.tokyo-pictures,.tokyo-timeline,.tokyo-bank{gap:8px}.tokyo-picture{font-size:12px!important;padding:9px 6px!important}.tokyo-practice h1{font-size:22px}.tokyo-slot{min-height:125px}.tokyo-playback{order:3;width:100%;justify-content:center}.tokyo-story h1{font-size:28px}}
+
+/* One viewport, with a reserved footer and no nested question scroller. */
+.lesson-shell.tokyo-lesson{height:100dvh;min-height:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:16px;padding:20px 32px 16px;overflow:visible}
+.tokyo-lesson .lesson-body{align-self:start;min-height:0;max-height:none;overflow:visible;margin:0 auto;padding:8px 4px;max-width:900px}
+.tokyo-lesson .lesson-footer{min-height:56px;padding-top:10px;gap:10px;flex-wrap:wrap}
+.tokyo-lesson .intro{padding-top:0}
+.tokyo-lesson h1{margin:10px 0;font-size:clamp(22px,3.5vh,28px);line-height:1.25}
+.tokyo-lesson .tokyo-story-grid{margin:16px 0;gap:24px}
+.tokyo-lesson .tokyo-scene>img:first-child{max-height:min(32vh,280px)}
+.tokyo-lesson .tokyo-transcript{font-size:clamp(16px,2.6vh,20px);line-height:1.55}
+.tokyo-lesson .word-sentence{font-size:clamp(20px,3.2vh,24px);line-height:1.8;margin:18px 0}
+.tokyo-lesson .word-bank{margin:16px 0;padding-top:16px}
+.tokyo-lesson .word-bank .bank-placeholder{min-height:52px}
+.tokyo-lesson .tokyo-feedback{margin-top:12px;padding:12px 0;font-size:14px;line-height:1.45}
+.tokyo-lesson .tokyo-feedback p{line-height:1.45;margin:4px 0}
+.tokyo-lesson .tokyo-pictures,.tokyo-lesson .tokyo-timeline,.tokyo-lesson .tokyo-bank{margin:12px 0}
+.tokyo-lesson .tokyo-slot{min-height:120px}
+.tokyo-lesson .tokyo-bank .bank-placeholder{min-height:120px}
+.tokyo-lesson .assignment-count{margin-top:10px}
+@media(max-width:759px){
+ .lesson-shell.tokyo-lesson{padding:12px 16px;gap:10px}
+ .tokyo-lesson .lesson-header{gap:10px}
+ .tokyo-lesson .lesson-body{padding:0 4px}
+ .tokyo-lesson .tokyo-story-grid{gap:12px;margin:12px 0}
+ .tokyo-lesson .tokyo-scene>img:first-child{max-height:clamp(80px,18vh,150px)}
+ .tokyo-lesson .tokyo-transcript{font-size:16px;line-height:1.45}
+ .tokyo-lesson .tokyo-playback{gap:8px}
+ .tokyo-lesson .tokyo-playback input{width:80px}
+ .tokyo-lesson .tokyo-question-art img{height:80px}
+ .tokyo-lesson .tokyo-choice-grid{gap:4px}
+ .tokyo-lesson .tokyo-picture img:not(.mepamo-status){height:60px}
+ .tokyo-lesson .tokyo-slot,.tokyo-lesson .tokyo-bank .bank-placeholder{min-height:105px}
+ .tokyo-lesson .tokyo-feedback{font-size:13px;gap:8px}
+ .tokyo-lesson .completion{padding-top:0}
+ .tokyo-lesson .completion>p{font-size:16px;margin:14px auto}
+ .tokyo-lesson .completion-facts{margin-top:18px}
+}
+@media(max-height:650px){
+ .lesson-shell.tokyo-lesson{gap:8px;padding-top:10px;padding-bottom:10px}
+ .tokyo-lesson h1{font-size:21px;margin:6px 0}
+ .tokyo-lesson .question-help{margin-bottom:8px}
+ .tokyo-lesson .tokyo-story-grid{margin:8px 0;gap:10px}
+ .tokyo-lesson .tokyo-transcript{font-size:15px;line-height:1.4}
+ .tokyo-lesson .tokyo-scene>img:first-child{max-height:90px}
+ .tokyo-lesson .tokyo-question-art img{height:55px}
+ .tokyo-lesson .tokyo-picture img:not(.mepamo-status){height:45px}
+ .tokyo-lesson .tokyo-slot,.tokyo-lesson .tokyo-bank .bank-placeholder{min-height:90px}
+ .tokyo-lesson .tokyo-pictures,.tokyo-lesson .tokyo-timeline,.tokyo-lesson .tokyo-bank{margin:8px 0}
+ .tokyo-lesson .tokyo-feedback{margin-top:8px;padding:8px 0}
+ .tokyo-lesson .word-sentence{margin:12px 0}
+}
+@media(max-height:450px) and (min-width:600px){
+ .lesson-shell.tokyo-lesson{padding:8px 20px;gap:4px;grid-template-rows:32px minmax(0,1fr) 50px}
+ .tokyo-lesson .lesson-body{padding:0 4px}
+ .tokyo-lesson .tokyo-story-grid{grid-template-columns:140px minmax(0,1fr);gap:16px}
+ .tokyo-lesson .tokyo-scene>img:first-child{max-height:140px}
+ .tokyo-lesson .tokyo-playback{order:0;width:auto}
+ .tokyo-lesson .tokyo-choice-grid{grid-template-columns:100px minmax(0,1fr)}
+ .tokyo-lesson .tokyo-question-art img{height:90px}
+ .tokyo-lesson .tokyo-picture img:not(.mepamo-status){height:32px}
+ .tokyo-lesson .tokyo-slot,.tokyo-lesson .tokyo-bank .bank-placeholder{min-height:64px}
+ .tokyo-lesson .tokyo-picture{gap:4px;padding:6px!important}
+ .tokyo-lesson .tokyo-feedback{font-size:12px;margin-top:4px;padding:4px 0}
+ .tokyo-lesson .assignment-count{margin:4px 0;font-size:11px}
+ .tokyo-lesson .tokyo-practice:has(.tokyo-timeline) .question-help{margin:0}
+ .tokyo-lesson .tokyo-practice:has(.tokyo-timeline) .tokyo-timeline:has(button:disabled)+.tokyo-bank{display:none!important}
+}
+
+/* Feedback uses the full reading width; decorative effects stay inside it. */
+.tokyo-lesson .tokyo-feedback{max-width:none;position:relative}
+.tokyo-lesson .mepamo-confetti--left{left:0}
+.tokyo-lesson .mepamo-confetti--right{right:0}
+.tokyo-lesson .mepamo-feedback-slot{height:0;width:40px;left:auto;right:0}
+.tokyo-lesson .mepamo-heart{width:40px;height:40px}
+.tokyo-lesson .tokyo-feedback:has(.mepamo-status[aria-label="Incorrect answer"]){padding-right:44px}
+.tokyo-lesson .tokyo-timeline:has(button:disabled)+.tokyo-bank{display:none!important}
+@media(max-height:450px) and (min-width:600px){
+ .tokyo-lesson .word-sentence{font-size:19px;line-height:1.4;margin:6px 0}
+ .tokyo-lesson .word-bank{margin:8px 0;padding-top:8px}
+ .tokyo-lesson .word-sentence .blank-slot{font-size:17px;min-height:44px;padding:6px 10px}
+}
+
+/* Text answers need no empty column reserved for a result label. */
+.tokyo-lesson .tokyo-choice-grid .option{grid-template-columns:28px minmax(0,1fr)}
+.tokyo-lesson .tokyo-choice-grid .answer-label{grid-column:2;font-size:11px;line-height:1.2}
+@media(max-height:650px) and (max-width:759px){
+ .tokyo-lesson .tokyo-choice-grid .option{padding:6px 9px;gap:4px 8px;font-size:13px;line-height:1.35}
+ .tokyo-lesson .tokyo-question-art img{height:40px}
+}
+@media(max-height:450px) and (min-width:600px){
+ .tokyo-lesson .tokyo-choice-grid .option{padding:4px 8px;gap:2px 8px;font-size:13px;line-height:1.3}
+ .tokyo-lesson .tokyo-choice-grid .options{margin-top:0;gap:4px}
+ .tokyo-lesson .tokyo-choice-grid .answer-label{grid-column:3}
+ .tokyo-lesson .tokyo-choice-grid .option:has(.answer-label){grid-template-columns:28px minmax(0,1fr) 88px}
+}
+
+@media(max-width:759px){
+ .tokyo-lesson .tokyo-playback{flex-wrap:nowrap;gap:6px}
+ .tokyo-lesson .tokyo-playback button{padding:8px 10px}
+ .tokyo-lesson .tokyo-playback input{width:60px;min-width:0}
+ .tokyo-lesson [data-audio-time]{white-space:nowrap;font-size:11px}
+ .tokyo-lesson .tokyo-question-art img{height:40px}
+}
+@media(max-height:450px) and (min-width:600px){
+ .tokyo-lesson .tokyo-choice-grid .option{min-height:44px}
+}
+
+@media(max-width:359px) and (max-height:650px){
+ .tokyo-lesson .tokyo-scene>img:first-child{max-height:60px}
+ .tokyo-lesson .tokyo-transcript{line-height:1.3}
+ .tokyo-lesson .tokyo-question-art img{height:24px}
+ .tokyo-lesson .tokyo-feedback{font-size:12px;line-height:1.35}
+ .tokyo-lesson .tokyo-feedback p{line-height:1.35}
+ .tokyo-lesson .tokyo-feedback:has(.mepamo-status[aria-label="Incorrect answer"]){padding-right:0}
+ .tokyo-lesson .mepamo-feedback-slot{left:0;right:auto;width:28px}
+ .tokyo-lesson .mepamo-heart{width:28px;height:28px}
+ .tokyo-lesson .tokyo-choice-grid .answer-label{font-size:10.5px;line-height:1.1}
+ .tokyo-lesson .tokyo-choice-grid .options{margin-top:6px;gap:5px}
+}
+
+/* The empty answer has a continuous rule sized to the slot's inner width. */
+.tokyo-lesson .blank-slot:empty::after{
+ content:'';display:inline-block;width:100%;height:.8em;
+ border-bottom:2px solid currentColor;vertical-align:baseline;
+}

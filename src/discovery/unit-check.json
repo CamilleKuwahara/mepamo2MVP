@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "id": "unit-1-check",
+  "afterLesson": 5,
+  "questionCount": 7,
+  "corePool": [
+    {
+      "alias": "T1",
+      "sourceLesson": 1,
+      "resolution": "external-existing-project"
+    },
+    {
+      "alias": "T2",
+      "sourceLesson": 1,
+      "resolution": "external-existing-project"
+    },
+    {
+      "alias": "T5",
+      "sourceLesson": 1,
+      "resolution": "external-existing-project"
+    },
+    {
+      "alias": "K1",
+      "sourceLesson": 2,
+      "questionId": "ky-q1"
+    },
+    {
+      "alias": "K4",
+      "sourceLesson": 2,
+      "questionId": "ky-q4"
+    },
+    {
+      "alias": "O2",
+      "sourceLesson": 3,
+      "questionId": "os-q2"
+    },
+    {
+      "alias": "O4",
+      "sourceLesson": 3,
+      "questionId": "os-q4"
+    },
+    {
+      "alias": "F1",
+      "sourceLesson": 4,
+      "questionId": "fu-q1"
+    },
+    {
+      "alias": "F4",
+      "sourceLesson": 4,
+      "questionId": "fu-q4"
+    },
+    {
+      "alias": "S1",
+      "sourceLesson": 5,
+      "questionId": "sh-q1"
+    },
+    {
+      "alias": "S4",
+      "sourceLesson": 5,
+      "questionId": "sh-q4"
+    }
+  ],
+  "minimumPerSourceLesson": 1,
+  "sourceLessons": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "extraSlots": 2,
+  "duplicateCanonicalIdsAllowed": false,
+  "newTeachingContent": false,
+  "voiceOver": false,
+  "defaultSelection": "Seeded shuffle: choose one eligible canonical item from each source lesson; choose two additional items without replacement from remaining eligible core items; shuffle the seven display positions.",
+  "optionalMissPreference": "If reliable existing attempt history is available, prefer previously missed eligible core items without changing coverage or uniqueness. Otherwise seeded selection is sufficient.",
+  "persistence": [
+    "attemptId",
+    "selectionSeed",
+    "orderedCanonicalQuestionIds",
+    "optionOrders",
+    "responses",
+    "checkedState",
+    "completionApplied"
+  ],
+  "selectionFrozenUntil": "a new explicit attempt starts",
+  "completionAndGating": "Reuse existing project assessment, energy, streak, pass, retry, unlock and progress rules. Do not introduce a threshold or new unlock behavior.",
+  "exampleQuestionRefs": [
+    "T1",
+    "T5",
+    "K1",
+    "O2",
+    "F1",
+    "F4",
+    "S1"
+  ]
+}

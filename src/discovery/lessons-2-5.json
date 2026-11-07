@@ -1,0 +1,1881 @@
+{
+  "schemaVersion": 2,
+  "status": "Codex content and asset handoff; repository integration has not been performed.",
+  "sharedRules": {
+    "contentOnly": false,
+    "imagesGenerated": false,
+    "audioGenerated": false,
+    "audience": "Curious beginners with no assumed knowledge of Japan. Terms are introduced before testing them.",
+    "flow": "Four interleaved content sections and five topic questions, then scheduled earlier-lesson review, then completion.",
+    "narration": "Hidden narrator; Mepamo-kun acts silently. Narration text doubles as the on-screen transcript. Word highlighting and auto-transition apply only to narrated sections.",
+    "practice": "No voice-over. Select/place -> Check -> explanation -> Continue. Never auto-advance practice or feedback.",
+    "sounds": "Reuse Lesson 1 / existing project celebration for correct answers and a neutral sound for incorrect answers, respecting mute. No sounds were generated for these drafts.",
+    "branding": "Existing repository tokens, logo, mascot and components are authoritative. Reference screenshots specify layout intent; never hardcode a second theme to match them.",
+    "pictureDescriptions": "Author notes retained for context; artwork.path is the supplied file to render. All paths are relative to package root.",
+    "grading": "Correct answers are author metadata. Do not expose answer IDs, checkmarks or the key before Check. Keep correctness separate from selected state.",
+    "timing": "Aim for roughly one minute of narration per lesson at a comfortable pace. Counts below are script-based estimates, not recorded audio durations. Do not pad interactions to force a duration.",
+    "matching": "A proposed question format. Reuse an existing matching component if available; do not assume it already exists in the repository.",
+    "sourceNote": "Facts checked against primary government, tourism-authority, operator and UNESCO sources on 2026-11-06. Sources are author notes, not narrator speech.",
+    "imagesIncluded": "31 native-resolution crops extracted from approved mockups; no new pictures generated for this handoff."
+  },
+  "lessons": [
+    {
+      "id": "lesson-2-kyoto",
+      "number": 2,
+      "title": "Kyoto: A capital with a long memory",
+      "storyFocus": "From imperial capital to living traditions.",
+      "modules": [
+        {
+          "id": "ky-m1",
+          "type": "narratedModule",
+          "title": "A capital with a long memory.",
+          "narration": "Tokyo is Japan’s capital today. But in 794, the imperial court—the emperor and the people around him—moved to a city called Heian-kyo, now Kyoto. The court remained there for over a thousand years, until the emperor moved to Tokyo in 1869.",
+          "sourceIds": [
+            "KY-HISTORY"
+          ],
+          "artworks": [
+            {
+              "assetId": "kyoto-court-garden",
+              "path": "assets/lesson-2/kyoto-court-garden.png",
+              "alt": "An illustrated historic court building and garden in Kyoto, with Mepamo-kun.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "ky-m2",
+          "type": "narratedModule",
+          "title": "Two kinds of sacred place.",
+          "narration": "Across Kyoto, sacred places tell different stories. Buddhist temples belong to Buddhism. Shinto shrines belong to Shinto, another religious tradition in Japan. A torii gate often marks a shrine entrance. These traditions have also influenced the city’s architecture and cultural life.",
+          "sourceIds": [
+            "KY-RELIGION",
+            "KY-CULTURE"
+          ],
+          "artworks": [
+            {
+              "assetId": "shinto-shrine-torii",
+              "path": "assets/lesson-2/shinto-shrine-torii.png",
+              "alt": "A red torii gate in front of a Shinto shrine.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          },
+          "visualNote": "Use shrine image for the Shinto/torii explanation; it must not be labeled as a Buddhist temple. Keep the two definitions as live text."
+        },
+        {
+          "id": "ky-m3",
+          "type": "narratedModule",
+          "title": "Culture in a bowl.",
+          "narration": "Tradition can be something you do. In a tea ceremony, a host carefully prepares and serves matcha—powdered green tea. The bowl, utensils, and attention given to guests turn serving tea into a cultural practice. Kyoto’s crafts help make that experience possible.",
+          "sourceIds": [
+            "KY-TEA",
+            "KY-CULTURE"
+          ],
+          "artworks": [
+            {
+              "assetId": "matcha-bowl-whisk",
+              "path": "assets/lesson-2/matcha-bowl-whisk.png",
+              "alt": "A bowl of green matcha beside a bamboo whisk.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "ky-m4",
+          "type": "narratedModule",
+          "title": "Still being made.",
+          "narration": "Kyoto’s traditions continue beyond old buildings. Artisans weave textiles, dye fabric, and make pottery, passing skills to others while creating new designs. The city’s history lives through people who keep practicing and adapting it. An old capital can still make something new.",
+          "sourceIds": [
+            "KY-CULTURE"
+          ],
+          "artworks": [
+            {
+              "assetId": "textile-workshop",
+              "path": "assets/lesson-2/textile-workshop.png",
+              "alt": "A loom with patterned fabric and spools of thread.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "ky-q1",
+          "type": "wordBank",
+          "title": "Complete the sentence.",
+          "instruction": "Tap a word to fill the blank.",
+          "teachingPrerequisites": [
+            "ky-m1"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "The imperial court moved to the city now called Kyoto in 794. Tokyo is Japan’s capital today."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "The imperial court moved to the city now called Kyoto in 794. Tokyo is Japan’s capital today."
+          },
+          "options": [
+            {
+              "id": "kyoto",
+              "text": "Kyoto"
+            },
+            {
+              "id": "tokyo",
+              "text": "Tokyo"
+            },
+            {
+              "id": "osaka",
+              "text": "Osaka"
+            }
+          ],
+          "correctAnswer": "kyoto",
+          "sentenceBefore": "Before the emperor moved to Tokyo, the imperial court was based in",
+          "sentenceAfter": ".",
+          "skill": "Recall the former imperial capital.",
+          "shuffleOptions": true,
+          "alias": "K1",
+          "sourceLesson": 2,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-2/02-ky-q1.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "ky-q2",
+          "type": "textChoice",
+          "title": "A gate gives you a clue.",
+          "instruction": "Choose one answer.",
+          "teachingPrerequisites": [
+            "ky-m2"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "A torii gate commonly marks the entrance to a Shinto shrine. Buddhist temples belong to a different religious tradition."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "A torii gate commonly marks the entrance to a Shinto shrine. Buddhist temples belong to a different religious tradition."
+          },
+          "options": [
+            {
+              "id": "shrine",
+              "text": "A Shinto shrine"
+            },
+            {
+              "id": "temple",
+              "text": "A Buddhist temple"
+            },
+            {
+              "id": "palace",
+              "text": "An imperial palace"
+            }
+          ],
+          "correctAnswer": "shrine",
+          "scenario": "You arrive at a sacred place with a torii gate at its entrance. What does that gate usually indicate?",
+          "skill": "Distinguish a shrine from a temple using a taught clue.",
+          "shuffleOptions": true,
+          "alias": "K2",
+          "sourceLesson": 2,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-2/03-ky-q2.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "ky-q3",
+          "type": "pictureChoice",
+          "title": "What does the host prepare and serve?",
+          "instruction": "Choose the drink introduced in the tea ceremony.",
+          "teachingPrerequisites": [
+            "ky-m3"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "The tea ceremony introduced here centers on preparing and serving matcha, a powdered green tea. Loose-leaf tea and coffee are different drinks."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "The tea ceremony introduced here centers on preparing and serving matcha, a powdered green tea. Loose-leaf tea and coffee are different drinks."
+          },
+          "options": [
+            {
+              "id": "matcha",
+              "text": "A bowl of matcha",
+              "futurePictureDescription": "A ceramic bowl holding whisked green matcha, with a bamboo whisk beside it.",
+              "artwork": {
+                "assetId": "matcha-bowl-whisk",
+                "path": "assets/lesson-2/supplied/matcha-bowl-whisk.png",
+                "alt": "A bowl of green matcha beside a bamboo whisk.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "leaf-tea",
+              "text": "Loose-leaf tea",
+              "futurePictureDescription": "A small teapot, loose tea leaves, and a cup of light green tea; no whisk or powdered tea.",
+              "artwork": {
+                "assetId": "loose-leaf-tea",
+                "path": "assets/lesson-2/supplied/loose-leaf-tea.png",
+                "alt": "A teapot, a cup of tea, and loose tea leaves.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "coffee",
+              "text": "Coffee",
+              "futurePictureDescription": "A cup of brown coffee with coffee beans beside it; no green tea or bamboo whisk.",
+              "artwork": {
+                "assetId": "coffee-cup",
+                "path": "assets/lesson-2/supplied/coffee-cup.png",
+                "alt": "A cup of coffee with coffee beans.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "correctAnswer": "matcha",
+          "skill": "Recognize an object and connect it to its cultural use.",
+          "shuffleOptions": true,
+          "alias": "K3",
+          "sourceLesson": 2,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-2/04-ky-q3.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "ky-q4",
+          "type": "textChoice",
+          "title": "What keeps a tradition alive?",
+          "instruction": "Choose the best explanation.",
+          "teachingPrerequisites": [
+            "ky-m4"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "A tradition can continue when people learn its skills, practice them, and use them in new work. Tradition does not have to mean that nothing ever changes."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "A tradition can continue when people learn its skills, practice them, and use them in new work. Tradition does not have to mean that nothing ever changes."
+          },
+          "options": [
+            {
+              "id": "practice",
+              "text": "Skills continue through teaching, practice, and new work."
+            },
+            {
+              "id": "building",
+              "text": "The workshop’s old building preserves the skill by itself."
+            },
+            {
+              "id": "change",
+              "text": "Any new design makes the work unrelated to tradition."
+            }
+          ],
+          "correctAnswer": "practice",
+          "scenario": "A Kyoto artisan teaches an apprentice a historic dyeing technique, then uses it to create a new pattern. What does this show?",
+          "skill": "Apply the idea of living tradition to a new example.",
+          "shuffleOptions": true,
+          "alias": "K4",
+          "sourceLesson": 2,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-2/05-ky-q4.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "ky-q5",
+          "type": "match",
+          "title": "Connect the experience to the idea.",
+          "instruction": "Select an experience, then its matching description.",
+          "teachingPrerequisites": [
+            "ky-m2",
+            "ky-m3",
+            "ky-m4"
+          ],
+          "correctFeedback": {
+            "title": "You’ve connected Kyoto’s traditions!",
+            "body": "A shrine connects to Shinto practice, a tea ceremony to preparing and serving matcha, and a craft workshop to skills passed between people."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "A shrine connects to Shinto practice, a tea ceremony to preparing and serving matcha, and a craft workshop to skills passed between people."
+          },
+          "leftItems": [
+            {
+              "id": "shrine",
+              "text": "Visiting a Shinto shrine",
+              "artwork": {
+                "assetId": "shinto-shrine-torii",
+                "path": "assets/lesson-2/shinto-shrine-torii.png",
+                "alt": "A red torii gate in front of a Shinto shrine.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "tea",
+              "text": "Taking part in a tea ceremony",
+              "artwork": {
+                "assetId": "tea-ceremony-tray",
+                "path": "assets/lesson-2/tea-ceremony-tray.png",
+                "alt": "A tray with a matcha bowl, whisk, and sweet.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "craft",
+              "text": "Learning in a textile workshop",
+              "artwork": {
+                "assetId": "textile-workshop",
+                "path": "assets/lesson-2/textile-workshop.png",
+                "alt": "A loom with patterned fabric and spools of thread.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "rightItems": [
+            {
+              "id": "skills",
+              "text": "Practicing a craft passed between people"
+            },
+            {
+              "id": "matcha",
+              "text": "Preparing and serving matcha"
+            },
+            {
+              "id": "shinto",
+              "text": "Encountering a Shinto place of worship"
+            }
+          ],
+          "correctPairs": {
+            "shrine": "shinto",
+            "tea": "matcha",
+            "craft": "skills"
+          },
+          "skill": "Connect several experiences to the traditions introduced.",
+          "shuffleRightItems": true,
+          "alias": "K5",
+          "sourceLesson": 2,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-2/06-ky-q5.png",
+          "gradeOn": "explicit-check"
+        }
+      ],
+      "closing": "Kyoto’s history is still being practiced, made, and shared.",
+      "narrationWordCount": 169,
+      "estimatedNarrationSecondsAt150wpm": 68,
+      "difficultyNote": "Intended progression from recall/recognition to application and connecting ideas; actual difficulty should be checked with beginners.",
+      "steps": [
+        {
+          "instanceId": "l2-ky-m1",
+          "kind": "module",
+          "moduleId": "ky-m1"
+        },
+        {
+          "instanceId": "l2-ky-q1",
+          "kind": "practice",
+          "questionRef": "K1"
+        },
+        {
+          "instanceId": "l2-ky-m2",
+          "kind": "module",
+          "moduleId": "ky-m2"
+        },
+        {
+          "instanceId": "l2-ky-q2",
+          "kind": "practice",
+          "questionRef": "K2"
+        },
+        {
+          "instanceId": "l2-ky-m3",
+          "kind": "module",
+          "moduleId": "ky-m3"
+        },
+        {
+          "instanceId": "l2-ky-q3",
+          "kind": "practice",
+          "questionRef": "K3"
+        },
+        {
+          "instanceId": "l2-ky-m4",
+          "kind": "module",
+          "moduleId": "ky-m4"
+        },
+        {
+          "instanceId": "l2-ky-q4",
+          "kind": "practice",
+          "questionRef": "K4"
+        },
+        {
+          "instanceId": "l2-ky-q5",
+          "kind": "practice",
+          "questionRef": "K5"
+        },
+        {
+          "instanceId": "l2-review-1",
+          "kind": "review",
+          "questionRef": "T2"
+        },
+        {
+          "instanceId": "l2-review-2",
+          "kind": "review",
+          "questionRef": "T5"
+        },
+        {
+          "instanceId": "l2-complete",
+          "kind": "complete"
+        }
+      ],
+      "reviewQuestionRefs": [
+        "T2",
+        "T5"
+      ],
+      "questionScreenCount": 7
+    },
+    {
+      "id": "lesson-3-osaka",
+      "number": 3,
+      "title": "Osaka: The story behind the flavor",
+      "storyFocus": "How a commercial city’s trading networks connect with its food culture.",
+      "modules": [
+        {
+          "id": "os-m1",
+          "type": "narratedModule",
+          "title": "Follow the ingredients.",
+          "narration": "Why is Osaka called “the nation’s kitchen”? During the Edo period, ships brought rice and other goods here from across Japan. Merchants stored, bought, and sold them. Osaka grew as a commercial city—a place where trade helped shape everyday life.",
+          "sourceIds": [
+            "OS-HISTORY"
+          ],
+          "artworks": [
+            {
+              "assetId": "osaka-trade-mascot",
+              "path": "assets/lesson-3/osaka-trade-mascot.png",
+              "alt": "A canal-side trading district with rice cargo and Mepamo-kun.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "os-m2",
+          "type": "narratedModule",
+          "title": "Two familiar favorites.",
+          "narration": "That food story continues at the griddle. Takoyaki are small balls of batter with pieces of octopus inside. Osaka-style okonomiyaki is a savory pancake made with batter and cabbage, often with other ingredients. Both became well-known parts of the city’s food culture.",
+          "sourceIds": [
+            "OS-TAKOYAKI",
+            "OS-OKONOMIYAKI"
+          ],
+          "artworks": [
+            {
+              "assetId": "takoyaki",
+              "path": "assets/lesson-3/takoyaki.png",
+              "alt": "Round takoyaki balls, one cut open to show octopus inside.",
+              "containsBakedMascot": false
+            },
+            {
+              "assetId": "okonomiyaki",
+              "path": "assets/lesson-3/okonomiyaki.png",
+              "alt": "A savory okonomiyaki pancake on a plate.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "os-m3",
+          "type": "narratedModule",
+          "title": "The flavor underneath.",
+          "narration": "Look beneath the toppings and you may find dashi: a savory cooking stock. In Osaka, a familiar version combines kombu—edible kelp—with dried bonito fish flakes. Dashi gives depth to many dishes. It is a base flavor, rather than simply a sauce poured on top.",
+          "sourceIds": [
+            "OS-DASHI",
+            "OS-STOCK"
+          ],
+          "artworks": [],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          },
+          "visualNote": "No dashi illustration is present in these mockups. Use existing project ingredient imagery only if accurate; otherwise present this short explanation in the existing text-focused module variant. Never label takoyaki or matcha as dashi."
+        },
+        {
+          "id": "os-m4",
+          "type": "narratedModule",
+          "title": "A city connected by food.",
+          "narration": "Trade and cooking belong to the same story. Ingredients arriving from different regions gave merchants something to sell and cooks something to work with. A useful way to follow this connection is: ingredients arrive, markets distribute them, and cooks turn them into dishes.",
+          "sourceIds": [
+            "OS-TRADE",
+            "OS-DASHI"
+          ],
+          "artworks": [
+            {
+              "assetId": "ingredients-arrive",
+              "path": "assets/lesson-3/ingredients-arrive.png",
+              "alt": "A cargo ship carrying ingredients from other regions.",
+              "containsBakedMascot": false
+            },
+            {
+              "assetId": "market-distribution",
+              "path": "assets/lesson-3/market-distribution.png",
+              "alt": "A market distributes fresh ingredients.",
+              "containsBakedMascot": false
+            },
+            {
+              "assetId": "cook-ingredients",
+              "path": "assets/lesson-3/cook-ingredients.png",
+              "alt": "A cook turns ingredients into a dish in a pan.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "os-q1",
+          "type": "textChoice",
+          "title": "What helped shape Osaka?",
+          "instruction": "Choose one answer.",
+          "teachingPrerequisites": [
+            "os-m1"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Osaka became a major center for gathering and trading goods, including rice. That commercial history helps explain the nickname “the nation’s kitchen.”"
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Osaka became a major center for gathering and trading goods, including rice. That commercial history helps explain the nickname “the nation’s kitchen.”"
+          },
+          "options": [
+            {
+              "id": "trade",
+              "text": "Trade in rice and other goods"
+            },
+            {
+              "id": "court",
+              "text": "Being the emperor’s long-term court city"
+            },
+            {
+              "id": "mountain",
+              "text": "Being Japan’s highest mountain"
+            }
+          ],
+          "correctAnswer": "trade",
+          "skill": "Recall the city’s commercial role.",
+          "shuffleOptions": true,
+          "artwork": {
+            "assetId": "osaka-rice-trade",
+            "path": "assets/lesson-3/osaka-rice-trade.png",
+            "alt": "Merchants’ storehouses, rice cargo, and a boat beside an Osaka canal.",
+            "containsBakedMascot": false
+          },
+          "alias": "O1",
+          "sourceLesson": 3,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-3/02-os-q1.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "os-q2",
+          "type": "match",
+          "title": "Two dishes. Two descriptions.",
+          "instruction": "Select a dish, then its matching description.",
+          "teachingPrerequisites": [
+            "os-m2"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Takoyaki are round batter snacks with octopus inside. Osaka-style okonomiyaki is a savory pancake with cabbage and batter."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Takoyaki are round batter snacks with octopus inside. Osaka-style okonomiyaki is a savory pancake with cabbage and batter."
+          },
+          "leftItems": [
+            {
+              "id": "takoyaki",
+              "text": "Takoyaki",
+              "futurePictureDescription": "A small tray of round takoyaki with one cut open to reveal a piece of octopus.",
+              "artwork": {
+                "assetId": "takoyaki",
+                "path": "assets/lesson-3/takoyaki.png",
+                "alt": "Round takoyaki balls, one cut open to show octopus inside.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "okonomiyaki",
+              "text": "Osaka-style okonomiyaki",
+              "futurePictureDescription": "One round savory cabbage pancake on a plate, distinct from separate takoyaki balls.",
+              "artwork": {
+                "assetId": "okonomiyaki",
+                "path": "assets/lesson-3/okonomiyaki.png",
+                "alt": "A savory okonomiyaki pancake on a plate.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "rightItems": [
+            {
+              "id": "pancake",
+              "text": "A savory pancake made with cabbage and batter"
+            },
+            {
+              "id": "balls",
+              "text": "Batter balls with pieces of octopus inside"
+            }
+          ],
+          "correctPairs": {
+            "takoyaki": "balls",
+            "okonomiyaki": "pancake"
+          },
+          "skill": "Distinguish two new food terms by their defining features.",
+          "shuffleRightItems": true,
+          "alias": "O2",
+          "sourceLesson": 3,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-3/03-os-q2.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "os-q3",
+          "type": "wordBank",
+          "title": "Name the flavor base.",
+          "instruction": "Tap a word to fill the blank.",
+          "teachingPrerequisites": [
+            "os-m3"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Dashi is a savory stock. One familiar Osaka version uses kombu kelp and dried bonito flakes. Dashi can also be made with other ingredients."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Dashi is a savory stock. One familiar Osaka version uses kombu kelp and dried bonito flakes. Dashi can also be made with other ingredients."
+          },
+          "options": [
+            {
+              "id": "dashi",
+              "text": "Dashi"
+            },
+            {
+              "id": "matcha",
+              "text": "Matcha"
+            },
+            {
+              "id": "takoyaki",
+              "text": "Takoyaki"
+            }
+          ],
+          "correctAnswer": "dashi",
+          "sentenceBefore": "A savory stock used as a base in many dishes is called",
+          "sentenceAfter": ".",
+          "skill": "Recall a new term and its culinary role.",
+          "shuffleOptions": true,
+          "alias": "O3",
+          "sourceLesson": 3,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-3/04-os-q3.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "os-q4",
+          "type": "textChoice",
+          "title": "How can trade influence taste?",
+          "instruction": "Choose the best explanation.",
+          "teachingPrerequisites": [
+            "os-m4"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Trade brings ingredients into contact with local cooks. What they make with those ingredients can become part of a city’s food culture."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Trade brings ingredients into contact with local cooks. What they make with those ingredients can become part of a city’s food culture."
+          },
+          "options": [
+            {
+              "id": "access",
+              "text": "Cooks gain access to ingredients from different regions."
+            },
+            {
+              "id": "same",
+              "text": "Every cook must prepare the same dish."
+            },
+            {
+              "id": "outside",
+              "text": "Food arriving from elsewhere cannot become part of local culture."
+            }
+          ],
+          "correctAnswer": "access",
+          "scenario": "A port brings together ingredients from across the country. How could that help shape a city’s cooking?",
+          "skill": "Apply the trade-and-food connection to a new example.",
+          "shuffleOptions": true,
+          "alias": "O4",
+          "sourceLesson": 3,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-3/05-os-q4.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "os-q5",
+          "type": "order",
+          "title": "Follow an ingredient into a dish.",
+          "instruction": "Tap the stages from arrival to the finished dish.",
+          "teachingPrerequisites": [
+            "os-m4"
+          ],
+          "correctFeedback": {
+            "title": "You’ve followed the connection!",
+            "body": "First ingredients arrive, then markets distribute them, and cooks use them in dishes. This is a simplified way to connect Osaka’s trade and food stories."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "First ingredients arrive, then markets distribute them, and cooks use them in dishes. This is a simplified way to connect Osaka’s trade and food stories."
+          },
+          "items": [
+            {
+              "id": "cook",
+              "text": "Cooks turn ingredients into dishes",
+              "artwork": {
+                "assetId": "cook-ingredients",
+                "path": "assets/lesson-3/cook-ingredients.png",
+                "alt": "A cook turns ingredients into a dish in a pan.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "arrive",
+              "text": "Ingredients arrive from other regions",
+              "artwork": {
+                "assetId": "ingredients-arrive",
+                "path": "assets/lesson-3/ingredients-arrive.png",
+                "alt": "A cargo ship carrying ingredients from other regions.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "market",
+              "text": "Markets distribute the ingredients",
+              "artwork": {
+                "assetId": "market-distribution",
+                "path": "assets/lesson-3/market-distribution.png",
+                "alt": "A market distributes fresh ingredients.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "correctOrder": [
+            "arrive",
+            "market",
+            "cook"
+          ],
+          "skill": "Reconstruct a causal sequence rather than memorize dates.",
+          "alias": "O5",
+          "sourceLesson": 3,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-3/06-os-q5.png",
+          "gradeOn": "explicit-check",
+          "shuffleItems": true
+        }
+      ],
+      "closing": "In Osaka, the story of a dish can also be the story of a trading city.",
+      "narrationWordCount": 174,
+      "estimatedNarrationSecondsAt150wpm": 70,
+      "difficultyNote": "Intended progression from recall/recognition to application and connecting ideas; actual difficulty should be checked with beginners.",
+      "steps": [
+        {
+          "instanceId": "l3-os-m1",
+          "kind": "module",
+          "moduleId": "os-m1"
+        },
+        {
+          "instanceId": "l3-os-q1",
+          "kind": "practice",
+          "questionRef": "O1"
+        },
+        {
+          "instanceId": "l3-os-m2",
+          "kind": "module",
+          "moduleId": "os-m2"
+        },
+        {
+          "instanceId": "l3-os-q2",
+          "kind": "practice",
+          "questionRef": "O2"
+        },
+        {
+          "instanceId": "l3-os-m3",
+          "kind": "module",
+          "moduleId": "os-m3"
+        },
+        {
+          "instanceId": "l3-os-q3",
+          "kind": "practice",
+          "questionRef": "O3"
+        },
+        {
+          "instanceId": "l3-os-m4",
+          "kind": "module",
+          "moduleId": "os-m4"
+        },
+        {
+          "instanceId": "l3-os-q4",
+          "kind": "practice",
+          "questionRef": "O4"
+        },
+        {
+          "instanceId": "l3-os-q5",
+          "kind": "practice",
+          "questionRef": "O5"
+        },
+        {
+          "instanceId": "l3-review-1",
+          "kind": "review",
+          "questionRef": "T1"
+        },
+        {
+          "instanceId": "l3-review-2",
+          "kind": "review",
+          "questionRef": "K4"
+        },
+        {
+          "instanceId": "l3-complete",
+          "kind": "complete"
+        }
+      ],
+      "reviewQuestionRefs": [
+        "T1",
+        "K4"
+      ],
+      "questionScreenCount": 7
+    },
+    {
+      "id": "lesson-4-mount-fuji",
+      "number": 4,
+      "title": "Mount Fuji: More than a mountain",
+      "storyFocus": "How a natural mountain can be recognized for its cultural meaning.",
+      "modules": [
+        {
+          "id": "fu-m1",
+          "type": "narratedModule",
+          "title": "A mountain you may recognize.",
+          "narration": "A broad base, sloping sides, and a summit often capped with snow: this is Mount Fuji, also called Fujisan. At 3,776 meters, it is Japan’s highest mountain. It is also a volcano. Its importance, though, reaches far beyond its height.",
+          "sourceIds": [
+            "FU-HEIGHT"
+          ],
+          "artworks": [
+            {
+              "assetId": "fuji-lake-mascot",
+              "path": "assets/lesson-4/fuji-lake-mascot.png",
+              "alt": "Mount Fuji above a lake, with Mepamo-kun in the foreground.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "fu-m2",
+          "type": "narratedModule",
+          "title": "A journey with meaning.",
+          "narration": "For centuries, people have approached Fuji as a sacred place. Pilgrims made journeys connected to religious belief, including ascents of the mountain and visits to shrines around its base. A pilgrimage is a journey with religious meaning, not simply another word for sightseeing.",
+          "sourceIds": [
+            "FU-FAITH"
+          ],
+          "artworks": [
+            {
+              "assetId": "fuji-shrine-pilgrimage",
+              "path": "assets/lesson-4/fuji-shrine-pilgrimage.png",
+              "alt": "A shrine associated with Mount Fuji, with Mepamo-kun nearby.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "fu-m3",
+          "type": "narratedModule",
+          "title": "A mountain on paper.",
+          "narration": "Others encountered Fuji through art. The artist Katsushika Hokusai made it a recurring subject in his woodblock-print series Thirty-six Views of Mount Fuji. A woodblock print transfers an image from a carved block onto paper. These images helped carry Fuji’s silhouette to audiences far away.",
+          "sourceIds": [
+            "FU-ART"
+          ],
+          "artworks": [
+            {
+              "assetId": "fuji-woodblock-style",
+              "path": "assets/lesson-4/fuji-woodblock-style.png",
+              "alt": "A woodblock-style illustration of waves and Mount Fuji.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "fu-m4",
+          "type": "narratedModule",
+          "title": "Why cultural heritage?",
+          "narration": "In 2013, UNESCO added Fujisan to the World Heritage List as a cultural site. The recognition centers on its sacred associations and artistic inspiration. The property includes places around the mountain as well as parts of Fuji itself. Nature can hold meaning created through human culture.",
+          "sourceIds": [
+            "FU-UNESCO"
+          ],
+          "artworks": [
+            {
+              "assetId": "fuji-pilgrimage-art",
+              "path": "assets/lesson-4/fuji-pilgrimage-art.png",
+              "alt": "A pilgrim at a shrine and a picture of Mount Fuji.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "fu-q1",
+          "type": "pictureChoice",
+          "title": "Which picture shows Japan’s highest mountain?",
+          "instruction": "Choose one picture.",
+          "teachingPrerequisites": [
+            "fu-m1"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Mount Fuji is the mountain with the recognizable sloping silhouette. It is Japan’s highest peak, at 3,776 meters."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Mount Fuji is the mountain with the recognizable sloping silhouette. It is Japan’s highest peak, at 3,776 meters."
+          },
+          "options": [
+            {
+              "id": "fuji",
+              "text": "Broad, sloping sides",
+              "futurePictureDescription": "Mount Fuji as a broad, sloping volcanic cone with a summit capped in snow; avoid an exaggerated alpine jagged peak.",
+              "artwork": {
+                "assetId": "fuji-sloping-cone",
+                "path": "assets/lesson-4/fuji-sloping-cone.png",
+                "alt": "A mountain with a broad base, sloping sides, and a snowy summit.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "jagged",
+              "text": "Jagged peaks",
+              "futurePictureDescription": "A mountain range with several steep jagged snow-topped peaks, clearly different from Fuji’s isolated sloping cone.",
+              "artwork": {
+                "assetId": "jagged-mountains",
+                "path": "assets/lesson-4/jagged-mountains.png",
+                "alt": "A mountain range with several jagged snowy peaks.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "plateau",
+              "text": "A flat top",
+              "futurePictureDescription": "A flat-topped plateau in the same simplified illustration style and framing.",
+              "artwork": {
+                "assetId": "flat-topped-plateau",
+                "path": "assets/lesson-4/flat-topped-plateau.png",
+                "alt": "A flat-topped plateau with steep sides.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "correctAnswer": "fuji",
+          "skill": "Recognize the landmark before interpreting its significance.",
+          "shuffleOptions": true,
+          "alias": "F1",
+          "sourceLesson": 4,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-4/02-fu-q1.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "fu-q2",
+          "type": "textChoice",
+          "title": "What makes a journey a pilgrimage?",
+          "instruction": "Choose one answer.",
+          "teachingPrerequisites": [
+            "fu-m2"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "A pilgrimage has religious meaning. Fuji’s pilgrimages are part of its sacred history; a journey does not become a pilgrimage simply because it reaches a high place."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "A pilgrimage has religious meaning. Fuji’s pilgrimages are part of its sacred history; a journey does not become a pilgrimage simply because it reaches a high place."
+          },
+          "options": [
+            {
+              "id": "belief",
+              "text": "It is a journey connected to religious belief."
+            },
+            {
+              "id": "height",
+              "text": "It must reach the country’s highest summit."
+            },
+            {
+              "id": "photo",
+              "text": "It is any trip made to take landscape photographs."
+            }
+          ],
+          "correctAnswer": "belief",
+          "skill": "Understand the term used to explain Fuji’s sacred importance.",
+          "shuffleOptions": true,
+          "alias": "F2",
+          "sourceLesson": 4,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-4/03-fu-q2.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "fu-q3",
+          "type": "match",
+          "title": "Two ways Fuji becomes meaningful.",
+          "instruction": "Match each example to the idea it illustrates.",
+          "teachingPrerequisites": [
+            "fu-m2",
+            "fu-m3"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "A pilgrimage is connected to religious belief. Hokusai’s woodblock prints are examples of artistic expression inspired by Fuji."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "A pilgrimage is connected to religious belief. Hokusai’s woodblock prints are examples of artistic expression inspired by Fuji."
+          },
+          "leftItems": [
+            {
+              "id": "pilgrim",
+              "text": "A pilgrim visits a shrine associated with Fuji",
+              "artwork": {
+                "assetId": "fuji-shrine-pilgrimage",
+                "path": "assets/lesson-4/fuji-shrine-pilgrimage.png",
+                "alt": "A shrine associated with Mount Fuji, with Mepamo-kun nearby.",
+                "containsBakedMascot": true
+              }
+            },
+            {
+              "id": "print",
+              "text": "Hokusai depicts Fuji in a woodblock print",
+              "artwork": {
+                "assetId": "fuji-woodblock-style",
+                "path": "assets/lesson-4/fuji-woodblock-style.png",
+                "alt": "A woodblock-style illustration of waves and Mount Fuji.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "rightItems": [
+            {
+              "id": "art",
+              "text": "Artistic inspiration"
+            },
+            {
+              "id": "faith",
+              "text": "Religious significance"
+            }
+          ],
+          "correctPairs": {
+            "pilgrim": "faith",
+            "print": "art"
+          },
+          "skill": "Connect concrete examples to Fuji’s two cultural themes.",
+          "shuffleRightItems": true,
+          "alias": "F3",
+          "sourceLesson": 4,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-4/04-fu-q3.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "fu-q4",
+          "type": "textChoice",
+          "title": "Why is Mount Fuji recognized as a Cultural World Heritage Site?",
+          "instruction": "Choose one answer.",
+          "teachingPrerequisites": [
+            "fu-m4"
+          ],
+          "correctFeedback": {
+            "title": "That’s right!",
+            "body": "Fujisan’s cultural value comes from its sacred associations and artistic inspiration. Its height alone is not the reason for its World Heritage recognition."
+          },
+          "incorrectFeedback": {
+            "title": "Let’s look again.",
+            "body": "Fuji is recognized for its religious significance and influence on art. A natural landscape can also hold cultural meaning; being the highest mountain does not automatically qualify it."
+          },
+          "options": [
+            {
+              "id": "culture",
+              "text": "Its religious significance and influence on art."
+            },
+            {
+              "id": "height",
+              "text": "Its height automatically gives it World Heritage status."
+            },
+            {
+              "id": "buildings",
+              "text": "It consists entirely of human-made buildings."
+            }
+          ],
+          "correctAnswer": "culture",
+          "skill": "Apply the difference between a natural feature and the reasons for a cultural inscription.",
+          "shuffleOptions": true,
+          "alias": "F4",
+          "sourceLesson": 4,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-4/05-fu-q4.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "fu-q5",
+          "type": "pictureChoice",
+          "title": "Choose the evidence for Fuji’s cultural story.",
+          "instruction": "Which pair best illustrates the reasons introduced in this lesson?",
+          "teachingPrerequisites": [
+            "fu-m2",
+            "fu-m3",
+            "fu-m4"
+          ],
+          "correctFeedback": {
+            "title": "You’ve connected nature and culture!",
+            "body": "Pilgrimage shows Fuji’s sacred associations; art shows its power to inspire. These are the cultural themes emphasized in its World Heritage recognition."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Pilgrimage shows Fuji’s sacred associations; art shows its power to inspire. These are the cultural themes emphasized in its World Heritage recognition."
+          },
+          "options": [
+            {
+              "id": "culture",
+              "text": "Pilgrimage and art",
+              "futurePictureDescription": "A paired card: a pilgrim near a Fuji-associated shrine and an original woodblock-style depiction of Fuji. Do not generate a replica of a specific artwork.",
+              "artwork": {
+                "assetId": "fuji-pilgrimage-art",
+                "path": "assets/lesson-4/fuji-pilgrimage-art.png",
+                "alt": "A pilgrim at a shrine and a picture of Mount Fuji.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "measure",
+              "text": "Height and rock measurements",
+              "futurePictureDescription": "A paired card: a height marker and a scientific rock sample, with no religious or artistic imagery.",
+              "artwork": {
+                "assetId": "fuji-height-rock",
+                "path": "assets/lesson-4/fuji-height-rock.png",
+                "alt": "A height marker and a rock sample near Mount Fuji.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "visit",
+              "text": "Tickets and souvenir shopping",
+              "futurePictureDescription": "A paired card: a general attraction ticket and souvenir bags, with no sacred site or artwork.",
+              "artwork": {
+                "assetId": "fuji-tickets-shopping",
+                "path": "assets/lesson-4/fuji-tickets-shopping.png",
+                "alt": "A ticket and souvenir shopping bags with Mount Fuji designs.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "correctAnswer": "culture",
+          "skill": "Select evidence supporting the explanation, not just recognize the mountain.",
+          "shuffleOptions": true,
+          "alias": "F5",
+          "sourceLesson": 4,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-4/06-fu-q5.png",
+          "gradeOn": "explicit-check"
+        }
+      ],
+      "closing": "Fuji is a mountain shaped by nature—and a place made meaningful through faith and art.",
+      "narrationWordCount": 177,
+      "estimatedNarrationSecondsAt150wpm": 71,
+      "difficultyNote": "Intended progression from recall/recognition to application and connecting ideas; actual difficulty should be checked with beginners.",
+      "steps": [
+        {
+          "instanceId": "l4-fu-m1",
+          "kind": "module",
+          "moduleId": "fu-m1"
+        },
+        {
+          "instanceId": "l4-fu-q1",
+          "kind": "practice",
+          "questionRef": "F1"
+        },
+        {
+          "instanceId": "l4-fu-m2",
+          "kind": "module",
+          "moduleId": "fu-m2"
+        },
+        {
+          "instanceId": "l4-fu-q2",
+          "kind": "practice",
+          "questionRef": "F2"
+        },
+        {
+          "instanceId": "l4-fu-m3",
+          "kind": "module",
+          "moduleId": "fu-m3"
+        },
+        {
+          "instanceId": "l4-fu-q3",
+          "kind": "practice",
+          "questionRef": "F3"
+        },
+        {
+          "instanceId": "l4-fu-m4",
+          "kind": "module",
+          "moduleId": "fu-m4"
+        },
+        {
+          "instanceId": "l4-fu-q4",
+          "kind": "practice",
+          "questionRef": "F4"
+        },
+        {
+          "instanceId": "l4-fu-q5",
+          "kind": "practice",
+          "questionRef": "F5"
+        },
+        {
+          "instanceId": "l4-review-1",
+          "kind": "review",
+          "questionRef": "K1"
+        },
+        {
+          "instanceId": "l4-review-2",
+          "kind": "review",
+          "questionRef": "O2"
+        },
+        {
+          "instanceId": "l4-complete",
+          "kind": "complete"
+        }
+      ],
+      "reviewQuestionRefs": [
+        "K1",
+        "O2"
+      ],
+      "questionScreenCount": 7
+    },
+    {
+      "id": "lesson-5-shinkansen",
+      "number": 5,
+      "title": "Shinkansen: Connecting the cities",
+      "storyFocus": "From a recognizable train to the railway system and city connections behind it.",
+      "modules": [
+        {
+          "id": "sh-m1",
+          "type": "narratedModule",
+          "title": "A new way between cities.",
+          "narration": "A streamlined train leaves the station. It belongs to the Shinkansen, Japan’s high-speed railway network, often called the bullet train. The first line, the Tokaido Shinkansen, opened in 1964, linking Tokyo and Shin-Osaka. Other lines later extended high-speed rail to more regions.",
+          "sourceIds": [
+            "SH-OPENING",
+            "SH-ROUTE"
+          ],
+          "artworks": [
+            {
+              "assetId": "shinkansen-city-mascot",
+              "path": "assets/lesson-5/shinkansen-city-mascot.png",
+              "alt": "A Shinkansen train on elevated tracks, with Mepamo-kun.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "sh-m2",
+          "type": "narratedModule",
+          "title": "Put the cities together.",
+          "narration": "Follow the Tokaido route from Tokyo toward Osaka. Among its major stations, you encounter Nagoya, then Kyoto, then Shin-Osaka. Shin-Osaka is the Shinkansen station serving Osaka; it is different from Osaka Station. This simplified sequence leaves out other stations along the line.",
+          "sourceIds": [
+            "SH-ROUTE"
+          ],
+          "artworks": [],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          },
+          "visualNote": "Render Tokyo → Nagoya → Kyoto → Shin-Osaka as live station labels using existing tokens; this is a simplified sequence, not a geographic map or every stop."
+        },
+        {
+          "id": "sh-m3",
+          "type": "narratedModule",
+          "title": "More than a fast train.",
+          "narration": "The Tokaido Shinkansen works as a system. Passenger trains carry people; dedicated tracks provide their route; automatic train control helps regulate speed. Its high-speed tracks have no road level crossings. Carefully designed infrastructure matters as much as the train’s streamlined appearance.",
+          "sourceIds": [
+            "SH-ENGINEERING"
+          ],
+          "artworks": [
+            {
+              "assetId": "passenger-train",
+              "path": "assets/lesson-5/passenger-train.png",
+              "alt": "A high-speed passenger train.",
+              "containsBakedMascot": false
+            },
+            {
+              "assetId": "dedicated-tracks",
+              "path": "assets/lesson-5/dedicated-tracks.png",
+              "alt": "Dedicated railway tracks beneath overhead power lines.",
+              "containsBakedMascot": false
+            },
+            {
+              "assetId": "automatic-train-control",
+              "path": "assets/lesson-5/automatic-train-control.png",
+              "alt": "A train-control console beside Mepamo-kun.",
+              "containsBakedMascot": true
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        },
+        {
+          "id": "sh-m4",
+          "type": "narratedModule",
+          "title": "What speed connects.",
+          "narration": "The important change is what faster connections make possible: people can travel between major cities for work, visits, and time with family. The Shinkansen links those cities; local transport serves different needs within them. Its story is about connections, as well as speed.",
+          "sourceIds": [
+            "SH-SYSTEM",
+            "SH-ROUTE"
+          ],
+          "artworks": [
+            {
+              "assetId": "tokyo-kyoto-journey",
+              "path": "assets/lesson-5/tokyo-kyoto-journey.png",
+              "alt": "Tokyo and Kyoto connected by a high-speed train.",
+              "containsBakedMascot": false
+            }
+          ],
+          "audio": {
+            "status": "not-recorded",
+            "reuseExistingNarrationPipeline": true,
+            "wordCueStatus": "not-produced"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "sh-q1",
+          "type": "textChoice",
+          "title": "What is the Shinkansen?",
+          "instruction": "Choose one answer.",
+          "teachingPrerequisites": [
+            "sh-m1"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "The Shinkansen is a network of high-speed passenger railway lines. The Tokaido Shinkansen was its first line, opening in 1964."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "The Shinkansen is a network of high-speed passenger railway lines. The Tokaido Shinkansen was its first line, opening in 1964."
+          },
+          "options": [
+            {
+              "id": "network",
+              "text": "Japan’s high-speed railway network"
+            },
+            {
+              "id": "subway",
+              "text": "A subway line operating only inside Tokyo"
+            },
+            {
+              "id": "freight",
+              "text": "A service designed mainly to transport freight"
+            }
+          ],
+          "correctAnswer": "network",
+          "skill": "Identify the system and avoid confusing it with a city subway.",
+          "shuffleOptions": true,
+          "artwork": {
+            "assetId": "shinkansen-fuji-landscape",
+            "path": "assets/lesson-5/shinkansen-fuji-landscape.png",
+            "alt": "A streamlined Shinkansen passenger train with Mount Fuji behind it.",
+            "containsBakedMascot": false
+          },
+          "alias": "S1",
+          "sourceLesson": 5,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-5/02-sh-q1.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "sh-q2",
+          "type": "order",
+          "title": "Travel from Tokyo toward Osaka.",
+          "instruction": "Arrange these major stations in the order introduced.",
+          "teachingPrerequisites": [
+            "sh-m2"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "The simplified sequence is Tokyo, Nagoya, Kyoto, then Shin-Osaka. Other stations lie along the route; this is not a complete stop list."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "The simplified sequence is Tokyo, Nagoya, Kyoto, then Shin-Osaka. Other stations lie along the route; this is not a complete stop list."
+          },
+          "items": [
+            {
+              "id": "kyoto",
+              "text": "Kyoto"
+            },
+            {
+              "id": "shin-osaka",
+              "text": "Shin-Osaka"
+            },
+            {
+              "id": "tokyo",
+              "text": "Tokyo"
+            },
+            {
+              "id": "nagoya",
+              "text": "Nagoya"
+            }
+          ],
+          "correctOrder": [
+            "tokyo",
+            "nagoya",
+            "kyoto",
+            "shin-osaka"
+          ],
+          "skill": "Use a taught route sequence rather than infer geography from city names.",
+          "alias": "S2",
+          "sourceLesson": 5,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-5/03-sh-q2.png",
+          "gradeOn": "explicit-check",
+          "shuffleItems": true
+        },
+        {
+          "id": "sh-q3",
+          "type": "match",
+          "title": "What makes the system work?",
+          "instruction": "Match each part to its role.",
+          "teachingPrerequisites": [
+            "sh-m3"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Passenger trains carry people, dedicated tracks provide the route, and automatic train control helps regulate train speed."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Passenger trains carry people, dedicated tracks provide the route, and automatic train control helps regulate train speed."
+          },
+          "leftItems": [
+            {
+              "id": "train",
+              "text": "Passenger train",
+              "artwork": {
+                "assetId": "passenger-train",
+                "path": "assets/lesson-5/passenger-train.png",
+                "alt": "A high-speed passenger train.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "track",
+              "text": "Dedicated tracks",
+              "artwork": {
+                "assetId": "dedicated-tracks",
+                "path": "assets/lesson-5/dedicated-tracks.png",
+                "alt": "Dedicated railway tracks beneath overhead power lines.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "control",
+              "text": "Automatic train control",
+              "artwork": {
+                "assetId": "automatic-train-control",
+                "path": "assets/lesson-5/automatic-train-control.png",
+                "alt": "A train-control console beside Mepamo-kun.",
+                "containsBakedMascot": true
+              }
+            }
+          ],
+          "rightItems": [
+            {
+              "id": "regulate",
+              "text": "Helps regulate train speed"
+            },
+            {
+              "id": "carry",
+              "text": "Carries people"
+            },
+            {
+              "id": "route",
+              "text": "Provides the high-speed rail route"
+            }
+          ],
+          "correctPairs": {
+            "train": "carry",
+            "track": "route",
+            "control": "regulate"
+          },
+          "skill": "Connect a visible vehicle with the infrastructure supporting it.",
+          "shuffleRightItems": true,
+          "alias": "S3",
+          "sourceLesson": 5,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-5/04-sh-q3.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "sh-q4",
+          "type": "pictureChoice",
+          "title": "Which trip matches the Shinkansen’s role?",
+          "instruction": "Choose the journey between major cities.",
+          "teachingPrerequisites": [
+            "sh-m4",
+            "sh-m2"
+          ],
+          "correctFeedback": {
+            "title": "Exactly!",
+            "body": "Tokyo to Kyoto is an intercity journey on the Tokaido Shinkansen. Moving between neighboring shops or inside one station is a different scale of travel."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "Tokyo to Kyoto is an intercity journey on the Tokaido Shinkansen. Moving between neighboring shops or inside one station is a different scale of travel."
+          },
+          "options": [
+            {
+              "id": "intercity",
+              "text": "Tokyo to Kyoto",
+              "futurePictureDescription": "Two distinct labeled city skylines, Tokyo and Kyoto, linked by a high-speed rail line.",
+              "artwork": {
+                "assetId": "tokyo-kyoto-journey",
+                "path": "assets/lesson-5/tokyo-kyoto-journey.png",
+                "alt": "Tokyo and Kyoto connected by a high-speed train.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "nearby",
+              "text": "A café to the shop next door",
+              "futurePictureDescription": "Two adjacent storefronts on one street, clearly a very short local trip.",
+              "artwork": {
+                "assetId": "adjacent-shops",
+                "path": "assets/lesson-5/adjacent-shops.png",
+                "alt": "Two neighboring shops on one street.",
+                "containsBakedMascot": false
+              }
+            },
+            {
+              "id": "inside",
+              "text": "A station entrance to its platform",
+              "futurePictureDescription": "A cutaway of one railway station showing entrance and platform inside the same building.",
+              "artwork": {
+                "assetId": "station-entrance-platform",
+                "path": "assets/lesson-5/station-entrance-platform.png",
+                "alt": "The entrance and platform within one railway station.",
+                "containsBakedMascot": false
+              }
+            }
+          ],
+          "correctAnswer": "intercity",
+          "skill": "Apply the distinction between intercity rail and local movement.",
+          "shuffleOptions": true,
+          "alias": "S4",
+          "sourceLesson": 5,
+          "priority": "core",
+          "unitCheckEligible": true,
+          "referencePath": "references/lesson-5/05-sh-q4.png",
+          "gradeOn": "explicit-check"
+        },
+        {
+          "id": "sh-q5",
+          "type": "textChoice",
+          "title": "What changed beyond the train itself?",
+          "instruction": "Choose the explanation that connects the lesson’s ideas.",
+          "teachingPrerequisites": [
+            "sh-m1",
+            "sh-m3",
+            "sh-m4"
+          ],
+          "correctFeedback": {
+            "title": "You’ve connected the system!",
+            "body": "The Shinkansen combines trains, infrastructure, and operation to connect cities. Its value is what those connections let people do, not simply how fast a vehicle looks."
+          },
+          "incorrectFeedback": {
+            "title": "A little clarification.",
+            "body": "The Shinkansen combines trains, infrastructure, and operation to connect cities. Its value is what those connections let people do, not simply how fast a vehicle looks."
+          },
+          "options": [
+            {
+              "id": "connection",
+              "text": "Trains and infrastructure made faster connections between cities possible."
+            },
+            {
+              "id": "shape",
+              "text": "A streamlined train shape removed the need for specialized tracks."
+            },
+            {
+              "id": "local",
+              "text": "High-speed rail replaced every form of local travel inside cities."
+            }
+          ],
+          "correctAnswer": "connection",
+          "skill": "Synthesize the train, infrastructure and intercity purpose.",
+          "shuffleOptions": true,
+          "alias": "S5",
+          "sourceLesson": 5,
+          "priority": "supporting",
+          "unitCheckEligible": false,
+          "referencePath": "references/lesson-5/06-sh-q5.png",
+          "gradeOn": "explicit-check"
+        }
+      ],
+      "closing": "A fast train becomes more meaningful when you see the places—and people—it connects.",
+      "narrationWordCount": 174,
+      "estimatedNarrationSecondsAt150wpm": 70,
+      "difficultyNote": "Intended progression from recall/recognition to application and connecting ideas; actual difficulty should be checked with beginners.",
+      "steps": [
+        {
+          "instanceId": "l5-sh-m1",
+          "kind": "module",
+          "moduleId": "sh-m1"
+        },
+        {
+          "instanceId": "l5-sh-q1",
+          "kind": "practice",
+          "questionRef": "S1"
+        },
+        {
+          "instanceId": "l5-sh-m2",
+          "kind": "module",
+          "moduleId": "sh-m2"
+        },
+        {
+          "instanceId": "l5-sh-q2",
+          "kind": "practice",
+          "questionRef": "S2"
+        },
+        {
+          "instanceId": "l5-sh-m3",
+          "kind": "module",
+          "moduleId": "sh-m3"
+        },
+        {
+          "instanceId": "l5-sh-q3",
+          "kind": "practice",
+          "questionRef": "S3"
+        },
+        {
+          "instanceId": "l5-sh-m4",
+          "kind": "module",
+          "moduleId": "sh-m4"
+        },
+        {
+          "instanceId": "l5-sh-q4",
+          "kind": "practice",
+          "questionRef": "S4"
+        },
+        {
+          "instanceId": "l5-sh-q5",
+          "kind": "practice",
+          "questionRef": "S5"
+        },
+        {
+          "instanceId": "l5-review-1",
+          "kind": "review",
+          "questionRef": "O4"
+        },
+        {
+          "instanceId": "l5-review-2",
+          "kind": "review",
+          "questionRef": "F4"
+        },
+        {
+          "instanceId": "l5-review-3",
+          "kind": "review",
+          "questionRef": "T2"
+        },
+        {
+          "instanceId": "l5-complete",
+          "kind": "complete"
+        }
+      ],
+      "reviewQuestionRefs": [
+        "O4",
+        "F4",
+        "T2"
+      ],
+      "questionScreenCount": 8
+    }
+  ],
+  "sources": {
+    "KY-HISTORY": {
+      "title": "Kyoto City: history of Kyoto",
+      "url": "https://www.city.kyoto.lg.jp/sogo/page/0000305427.html"
+    },
+    "KY-CULTURE": {
+      "title": "Kyoto official tourism: art, culture and living craftsmanship",
+      "url": "https://kyoto.travel/en/art-and-culture"
+    },
+    "KY-RELIGION": {
+      "title": "JNTO: shrine and temple traditions",
+      "url": "https://www.japan.travel/en/guide/shrine-and-temple-traditions/"
+    },
+    "KY-TEA": {
+      "title": "JNTO: tea ceremony in Kyoto",
+      "url": "https://www.japan.travel/en/experiences-in-japan/1451/"
+    },
+    "OS-HISTORY": {
+      "title": "Osaka City: historical overview",
+      "url": "https://www.city.osaka.lg.jp/contents/wdu020/enjoy/en/overview/content_Historical_overview.html"
+    },
+    "OS-TRADE": {
+      "title": "Osaka official tourism: commercial history and food culture",
+      "url": "https://osaka-info.jp/en/osaka/food/gastronomy-osakagastronomy/"
+    },
+    "OS-TAKOYAKI": {
+      "title": "MAFF: regional cuisine, takoyaki",
+      "url": "https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/4762/index.html"
+    },
+    "OS-OKONOMIYAKI": {
+      "title": "Osaka official tourism: okonomiyaki",
+      "url": "https://osaka-info.jp/en/gourmet/gastronomy-okonomiyaki/"
+    },
+    "OS-DASHI": {
+      "title": "MAFF: Osaka regional food culture",
+      "url": "https://www.maff.go.jp/e/policies/market/k_ryouri/areastory/1443/index.html"
+    },
+    "OS-STOCK": {
+      "title": "JETRO: dashi ingredients",
+      "url": "https://japan-food.jetro.go.jp/en/japanesecuisine/120.html"
+    },
+    "FU-HEIGHT": {
+      "title": "Fujisan World Cultural Heritage Council: cultural value and geography",
+      "url": "https://www.fujisan-3776.jp/en/value/index.html"
+    },
+    "FU-FAITH": {
+      "title": "Government of Japan: Mount Fuji as an object of faith",
+      "url": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/201908/201908_08_en.html"
+    },
+    "FU-ART": {
+      "title": "Government of Japan: Fuji, art and cultural significance",
+      "url": "https://www.gov-online.go.jp/eng/publicity/book/hlj/html/202301/202301_01_en.html"
+    },
+    "FU-UNESCO": {
+      "title": "UNESCO: Fujisan, sacred place and source of artistic inspiration",
+      "url": "https://whc.unesco.org/en/list/1418"
+    },
+    "SH-OPENING": {
+      "title": "MLIT: infrastructure development and the 1964 Shinkansen opening",
+      "url": "https://www.mlit.go.jp/common/001157851.pdf"
+    },
+    "SH-SYSTEM": {
+      "title": "JR Central: about the Shinkansen",
+      "url": "https://global.jr-central.co.jp/en/company/about_shinkansen/"
+    },
+    "SH-ROUTE": {
+      "title": "JNTO: Shinkansen network and Tokaido route",
+      "url": "https://www.japan.travel/en/plan/getting-around/shinkansen/"
+    },
+    "SH-ENGINEERING": {
+      "title": "JR Central Integrated Report 2021: dedicated tracks and automatic train control",
+      "url": "https://global.jr-central.co.jp/en/company/ir/annualreport/_pdf/annualreport2021.pdf"
+    }
+  },
+  "questionAliases": {
+    "K1": "ky-q1",
+    "K2": "ky-q2",
+    "K3": "ky-q3",
+    "K4": "ky-q4",
+    "K5": "ky-q5",
+    "O1": "os-q1",
+    "O2": "os-q2",
+    "O3": "os-q3",
+    "O4": "os-q4",
+    "O5": "os-q5",
+    "F1": "fu-q1",
+    "F2": "fu-q2",
+    "F3": "fu-q3",
+    "F4": "fu-q4",
+    "F5": "fu-q5",
+    "S1": "sh-q1",
+    "S2": "sh-q2",
+    "S3": "sh-q3",
+    "S4": "sh-q4",
+    "S5": "sh-q5"
+  }
+}

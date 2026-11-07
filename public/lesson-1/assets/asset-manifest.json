@@ -1,0 +1,245 @@
+[
+  {
+    "id": "mepamo-kun-original",
+    "path": "assets/brand/mepamo-kun-original.png",
+    "width": 1241,
+    "height": 1267,
+    "mode": "RGBA",
+    "origin": "Original asset from the saved Mepamo prototype.",
+    "usage": "Prefer an equivalent existing project asset if it is the canonical brand file.",
+    "containsBakedMascot": false,
+    "sha256": "f2ab14087572933d15613b008b2d3f3fab2a09c656d3fe02ca8acecf9cc69d1e"
+  },
+  {
+    "id": "completed-badge-original",
+    "path": "assets/brand/completed-badge-original.png",
+    "width": 320,
+    "height": 320,
+    "mode": "RGBA",
+    "origin": "Original asset from the saved Mepamo prototype.",
+    "usage": "Prefer an equivalent existing project asset if it is the canonical brand file.",
+    "containsBakedMascot": false,
+    "sha256": "5ef13c9eaa88b3ca6a821015ae42e110f3dbe8de4c86aa518f74a80b7d301dc4"
+  },
+  {
+    "id": "japan-tokyo-introduction-original",
+    "path": "assets/scenes/japan-tokyo-introduction-original.png",
+    "width": 960,
+    "height": 540,
+    "mode": "RGB",
+    "origin": "Original asset from the saved Mepamo prototype.",
+    "usage": "Prefer an equivalent existing project asset if it is the canonical brand file.",
+    "containsBakedMascot": true,
+    "sha256": "7b10b1e12505797fa3388b21b43d8b1440d3c3ab400dde6593df6dca2978ee5d"
+  },
+  {
+    "id": "mepamo-logo-original",
+    "path": "assets/brand/mepamo-logo-original.png",
+    "width": 208,
+    "height": 57,
+    "mode": "RGBA",
+    "origin": "User-supplied logo; original bytes.",
+    "usage": "Use canonical existing project logo; this is the supplied reference.",
+    "containsBakedMascot": false,
+    "sha256": "975de7888d634c603b01946a23dd9a350c305a647a62a13e115d723f8ad8cb13"
+  },
+  {
+    "id": "mepamo-logo-trimmed",
+    "path": "assets/brand/mepamo-logo-trimmed.png",
+    "width": 114,
+    "height": 25,
+    "mode": "RGB",
+    "origin": {
+      "source": "assets/brand/mepamo-logo-original.png",
+      "crop": [
+        71,
+        20,
+        185,
+        45
+      ]
+    },
+    "usage": "Cropped whitespace only; lettering is unchanged. White background.",
+    "containsBakedMascot": false,
+    "sha256": "c43eb1aedecc5872d9d02c2ff44405e07e7006431b6a58477e4afd6407605957"
+  },
+  {
+    "id": "edo-castle-town",
+    "path": "assets/scenes/edo-castle-town.png",
+    "width": 330,
+    "height": 226,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-f25fafdd-edc9-4a9a-979a-91ae6d8eccf7.png",
+      "crop": [
+        603,
+        560,
+        933,
+        786
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Illustration for Edo module and timeline. Simplified scene, not an archival reconstruction.",
+    "containsBakedMascot": false,
+    "sha256": "5b22d2e191add452b5054a334943a864f4f048c688814933cf15590b17de8619"
+  },
+  {
+    "id": "skytree-landmark",
+    "path": "assets/scenes/skytree-landmark.png",
+    "width": 330,
+    "height": 226,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-f25fafdd-edc9-4a9a-979a-91ae6d8eccf7.png",
+      "crop": [
+        200,
+        560,
+        530,
+        786
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Clean landmark scene for timeline; no mascot baked in.",
+    "containsBakedMascot": false,
+    "sha256": "922f62b001dba6640aab1e1b952854f87e64d597a8e4df9665651ca2a48b73ef"
+  },
+  {
+    "id": "tokyo-tower-landmark",
+    "path": "assets/scenes/tokyo-tower-landmark.png",
+    "width": 330,
+    "height": 226,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-f25fafdd-edc9-4a9a-979a-91ae6d8eccf7.png",
+      "crop": [
+        1007,
+        560,
+        1337,
+        786
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Clean tower illustration for timeline or layered module; no mascot baked in.",
+    "containsBakedMascot": false,
+    "sha256": "5f87e9ec502f6368251b2c08f95d26c048ad47635a3c0d65058a364cd4871a0f"
+  },
+  {
+    "id": "tokyo-tower-module-composite",
+    "path": "assets/scenes/tokyo-tower-module-composite.png",
+    "width": 576,
+    "height": 557,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-ca889c78-3197-4fc3-a2b5-45e870a433bb.png",
+      "crop": [
+        147,
+        284,
+        723,
+        841
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Static reference scene only; mascot is baked into this image. Never overlay a second mascot.",
+    "containsBakedMascot": true,
+    "sha256": "2636cbee1a9a82243286668a119ce499758a7b32248cc62b128227c023d37695"
+  },
+  {
+    "id": "ieyasu-portrait",
+    "path": "assets/scenes/ieyasu-portrait.png",
+    "width": 396,
+    "height": 403,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-5d852f73-3b29-42cf-ba86-214fa26578f4.png",
+      "crop": [
+        153,
+        390,
+        549,
+        793
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Illustrative portrait for Ieyasu module and question; not a documentary historical portrait.",
+    "containsBakedMascot": false,
+    "sha256": "e90fbfb6f7f335f21a642a761710699db1b7ec46031f39e34293e72be0eb8e85"
+  },
+  {
+    "id": "skytree-module",
+    "path": "assets/scenes/skytree-module.png",
+    "width": 396,
+    "height": 400,
+    "mode": "RGB",
+    "origin": {
+      "source": "exec-cf564f97-61e7-44ed-a572-c11948e6bb32.png",
+      "crop": [
+        153,
+        391,
+        549,
+        791
+      ],
+      "process": "Native-resolution crop; no upscaling or repainting."
+    },
+    "usage": "Clean Skytree illustration for module and reasoning question.",
+    "containsBakedMascot": false,
+    "sha256": "bcb220743b49a70bab6fa590ef0ff20a16bd6999b06fc6bb1605af9f934e7ea5"
+  },
+  {
+    "id": "television",
+    "path": "assets/quiz/television.png",
+    "width": 260,
+    "height": 262,
+    "mode": "RGBA",
+    "origin": {
+      "source": "exec-af8136c1-de8a-4dfe-8c08-e9a78d160f8b.png",
+      "crop": [
+        285,
+        445,
+        549,
+        708
+      ],
+      "process": "Native-resolution crop and edge-connected pale-background removal."
+    },
+    "usage": "Transparent icon for picture-answer card. Keep card border, label and selected fill in live UI, not baked artwork.",
+    "containsBakedMascot": false,
+    "sha256": "c5677f3c1a8fbde3576fd4192968467b3aa31d6f7493bfc698419e229dcc10e6"
+  },
+  {
+    "id": "faucet",
+    "path": "assets/quiz/faucet.png",
+    "width": 245,
+    "height": 261,
+    "mode": "RGBA",
+    "origin": {
+      "source": "exec-af8136c1-de8a-4dfe-8c08-e9a78d160f8b.png",
+      "crop": [
+        647,
+        446,
+        905,
+        710
+      ],
+      "process": "Native-resolution crop and edge-connected pale-background removal."
+    },
+    "usage": "Transparent icon for picture-answer card. Keep card border, label and selected fill in live UI, not baked artwork.",
+    "containsBakedMascot": false,
+    "sha256": "ff6779b3199021a915c74eb46a4f512276a7e8120feb0882e595750f8830f456"
+  },
+  {
+    "id": "lightbulb",
+    "path": "assets/quiz/lightbulb.png",
+    "width": 268,
+    "height": 282,
+    "mode": "RGBA",
+    "origin": {
+      "source": "exec-af8136c1-de8a-4dfe-8c08-e9a78d160f8b.png",
+      "crop": [
+        995,
+        430,
+        1273,
+        713
+      ],
+      "process": "Native-resolution crop and edge-connected pale-background removal."
+    },
+    "usage": "Transparent icon for picture-answer card. Keep card border, label and selected fill in live UI, not baked artwork.",
+    "containsBakedMascot": false,
+    "sha256": "bf9b5a4941d026eac80ea430eb7a7ecd57cd95e222566ca2c41986d001c95a79"
+  }
+]

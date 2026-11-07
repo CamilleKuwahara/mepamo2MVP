@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 1,
+  "extractionOnly": true,
+  "redrawnOrGenerated": false,
+  "assets": [
+    {
+      "id": "kyoto-court-garden",
+      "path": "assets/lesson-2/kyoto-court-garden.png",
+      "width": 579,
+      "height": 561,
+      "sourceReference": "references/lesson-2/01-narrated-module.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        146,
+        281,
+        725,
+        842
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "An illustrated historic court building and garden in Kyoto, with Mepamo-kun.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "cd59b999de7fbc2690c9baeb14d9ec27bda18bee2bc27144bc4374aa230a7678"
+    },
+    {
+      "id": "matcha-bowl-whisk",
+      "path": "assets/lesson-2/matcha-bowl-whisk.png",
+      "width": 365,
+      "height": 279,
+      "sourceReference": "references/lesson-2/04-ky-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        155,
+        418,
+        520,
+        697
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A bowl of green matcha beside a bamboo whisk.",
+      "containsBakedMascot": false,
+      "kind": "object",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "de821fff1b86f4b763452b1e383e810a8905eb3744fa6379b1dbe6b9f60b1036"
+    },
+    {
+      "id": "loose-leaf-tea",
+      "path": "assets/lesson-2/loose-leaf-tea.png",
+      "width": 365,
+      "height": 297,
+      "sourceReference": "references/lesson-2/04-ky-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        592,
+        402,
+        957,
+        699
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A teapot, a cup of tea, and loose tea leaves.",
+      "containsBakedMascot": false,
+      "kind": "object",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "a9bf687bf328c00e7edf623136d865d8d4828b3c9757184b277c16d606b3d957"
+    },
+    {
+      "id": "coffee-cup",
+      "path": "assets/lesson-2/coffee-cup.png",
+      "width": 338,
+      "height": 274,
+      "sourceReference": "references/lesson-2/04-ky-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        1035,
+        425,
+        1373,
+        699
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A cup of coffee with coffee beans.",
+      "containsBakedMascot": false,
+      "kind": "object",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "d5cd0d0e0c4b7c1ff0191ba5c8a805d9c4ae43ee84fb068803982c834eccc980"
+    },
+    {
+      "id": "shinto-shrine-torii",
+      "path": "assets/lesson-2/shinto-shrine-torii.png",
+      "width": 249,
+      "height": 141,
+      "sourceReference": "references/lesson-2/06-ky-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        151,
+        354,
+        400,
+        495
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A red torii gate in front of a Shinto shrine.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "b8fb91fd0053aa5aa736e95ec0ec80ff818ee5a66e39deb8399d91601c31d79d"
+    },
+    {
+      "id": "tea-ceremony-tray",
+      "path": "assets/lesson-2/tea-ceremony-tray.png",
+      "width": 249,
+      "height": 140,
+      "sourceReference": "references/lesson-2/06-ky-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        151,
+        542,
+        400,
+        682
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A tray with a matcha bowl, whisk, and sweet.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "903c56abc7c8a73ff1c2e077584aa01ff264eb43d469bd86700264655dd1b5b7"
+    },
+    {
+      "id": "textile-workshop",
+      "path": "assets/lesson-2/textile-workshop.png",
+      "width": 249,
+      "height": 140,
+      "sourceReference": "references/lesson-2/06-ky-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        151,
+        729,
+        400,
+        869
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A loom with patterned fabric and spools of thread.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "e2e44401def8cc857c6c0874be45f182cdcab59425ccc181dcd37f5cf0bc7a47"
+    },
+    {
+      "id": "osaka-trade-mascot",
+      "path": "assets/lesson-3/osaka-trade-mascot.png",
+      "width": 577,
+      "height": 560,
+      "sourceReference": "references/lesson-3/01-narrated-module.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        146,
+        282,
+        723,
+        842
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A canal-side trading district with rice cargo and Mepamo-kun.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "b092307de492ae7e97db58bb6e85bd06af35e16d87521e95777aee8b2f936bd1"
+    },
+    {
+      "id": "osaka-rice-trade",
+      "path": "assets/lesson-3/osaka-rice-trade.png",
+      "width": 565,
+      "height": 510,
+      "sourceReference": "references/lesson-3/02-os-q1.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        105,
+        335,
+        670,
+        845
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Merchants’ storehouses, rice cargo, and a boat beside an Osaka canal.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "892a790386679e4cb244802c6b08429c516491c0c877006422e051448f3616f9"
+    },
+    {
+      "id": "takoyaki",
+      "path": "assets/lesson-3/takoyaki.png",
+      "width": 300,
+      "height": 191,
+      "sourceReference": "references/lesson-3/03-os-q2.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        136,
+        385,
+        436,
+        576
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Round takoyaki balls, one cut open to show octopus inside.",
+      "containsBakedMascot": false,
+      "kind": "object",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "0de84eea263ec6e3ab2a30ea22f2f8121926279cfec56bb4ace9d9ce74871a69"
+    },
+    {
+      "id": "okonomiyaki",
+      "path": "assets/lesson-3/okonomiyaki.png",
+      "width": 297,
+      "height": 194,
+      "sourceReference": "references/lesson-3/03-os-q2.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        136,
+        626,
+        433,
+        820
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A savory okonomiyaki pancake on a plate.",
+      "containsBakedMascot": false,
+      "kind": "object",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "9f3be3bf687814a406e62474b4bbd40caee2e22791213bad3621c97df757c75e"
+    },
+    {
+      "id": "cook-ingredients",
+      "path": "assets/lesson-3/cook-ingredients.png",
+      "width": 379,
+      "height": 227,
+      "sourceReference": "references/lesson-3/06-os-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        145,
+        556,
+        524,
+        783
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A cook turns ingredients into a dish in a pan.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "1f7012d8383a06b37fff69af296d48edd995660f9656651912c60d8860953901"
+    },
+    {
+      "id": "ingredients-arrive",
+      "path": "assets/lesson-3/ingredients-arrive.png",
+      "width": 377,
+      "height": 227,
+      "sourceReference": "references/lesson-3/06-os-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        580,
+        556,
+        957,
+        783
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A cargo ship carrying ingredients from other regions.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "048dcd1cf4e80ff36d4c1116b82ff17397455133863af24e0d2a560456de6d64"
+    },
+    {
+      "id": "market-distribution",
+      "path": "assets/lesson-3/market-distribution.png",
+      "width": 378,
+      "height": 227,
+      "sourceReference": "references/lesson-3/06-os-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        1014,
+        556,
+        1392,
+        783
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A market distributes fresh ingredients.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "a34f17a4e90ebff11a2e86095fbfa60ff9d15f5c300fab91ee0f0f491e53a265"
+    },
+    {
+      "id": "fuji-lake-mascot",
+      "path": "assets/lesson-4/fuji-lake-mascot.png",
+      "width": 579,
+      "height": 560,
+      "sourceReference": "references/lesson-4/01-narrated-module.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        146,
+        282,
+        725,
+        842
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Mount Fuji above a lake, with Mepamo-kun in the foreground.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "855f770b7a69685c1336a2aae95bccca00c9f8b65d0c3587da962e9e43888381"
+    },
+    {
+      "id": "fuji-sloping-cone",
+      "path": "assets/lesson-4/fuji-sloping-cone.png",
+      "width": 345,
+      "height": 314,
+      "sourceReference": "references/lesson-4/02-fu-q1.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        176,
+        390,
+        521,
+        704
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A mountain with a broad base, sloping sides, and a snowy summit.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "dbdae77bbbf61fcaa339d54a47147d3e531516206d7b73c4af13cd7ff377d94c"
+    },
+    {
+      "id": "jagged-mountains",
+      "path": "assets/lesson-4/jagged-mountains.png",
+      "width": 346,
+      "height": 314,
+      "sourceReference": "references/lesson-4/02-fu-q1.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        596,
+        390,
+        942,
+        704
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A mountain range with several jagged snowy peaks.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "a829e12d85fadc6de1f99259d43921be0cd3b43a3340a822be61d5012f5353dd"
+    },
+    {
+      "id": "flat-topped-plateau",
+      "path": "assets/lesson-4/flat-topped-plateau.png",
+      "width": 346,
+      "height": 314,
+      "sourceReference": "references/lesson-4/02-fu-q1.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        1016,
+        390,
+        1362,
+        704
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A flat-topped plateau with steep sides.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "c35d734f631f804b8f2e53e2e50a33def6bb3bcfc7f1464f76975540bef36946"
+    },
+    {
+      "id": "fuji-shrine-pilgrimage",
+      "path": "assets/lesson-4/fuji-shrine-pilgrimage.png",
+      "width": 288,
+      "height": 205,
+      "sourceReference": "references/lesson-4/04-fu-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        115,
+        365,
+        403,
+        570
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A shrine associated with Mount Fuji, with Mepamo-kun nearby.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "9ac8b7a19efbbb797e9851aa3e1bb8b8e5f750b1579c088cadb0f840987f28c2"
+    },
+    {
+      "id": "fuji-woodblock-style",
+      "path": "assets/lesson-4/fuji-woodblock-style.png",
+      "width": 302,
+      "height": 206,
+      "sourceReference": "references/lesson-4/04-fu-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        115,
+        625,
+        417,
+        831
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A woodblock-style illustration of waves and Mount Fuji.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "Illustrative artwork from the mockup; not a documentary scan or authenticated reproduction of a specific Hokusai print.",
+      "sha256": "7a9adadc483345edcbb1431fb82174e8c96d75df4b07da2c557c9db84d0d9add"
+    },
+    {
+      "id": "fuji-pilgrimage-art",
+      "path": "assets/lesson-4/fuji-pilgrimage-art.png",
+      "width": 378,
+      "height": 347,
+      "sourceReference": "references/lesson-4/06-fu-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        140,
+        379,
+        518,
+        726
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A pilgrim at a shrine and a picture of Mount Fuji.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "1dffc7add9d4f87304a278351243564b5d814c7051ae56104ee56ceaa756dda4"
+    },
+    {
+      "id": "fuji-height-rock",
+      "path": "assets/lesson-4/fuji-height-rock.png",
+      "width": 379,
+      "height": 347,
+      "sourceReference": "references/lesson-4/06-fu-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        580,
+        379,
+        959,
+        726
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A height marker and a rock sample near Mount Fuji.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "61079cc57e8a1b41c271400cf5b57be7ef4f9c95bb86f448ba00663b7459610f"
+    },
+    {
+      "id": "fuji-tickets-shopping",
+      "path": "assets/lesson-4/fuji-tickets-shopping.png",
+      "width": 378,
+      "height": 347,
+      "sourceReference": "references/lesson-4/06-fu-q5.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        1020,
+        379,
+        1398,
+        726
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A ticket and souvenir shopping bags with Mount Fuji designs.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "d2aa7d11f1bfb0736d3eaa51968c2db873d09394a5839838bb65238581e968e5"
+    },
+    {
+      "id": "shinkansen-city-mascot",
+      "path": "assets/lesson-5/shinkansen-city-mascot.png",
+      "width": 579,
+      "height": 560,
+      "sourceReference": "references/lesson-5/01-narrated-module.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        146,
+        282,
+        725,
+        842
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A Shinkansen train on elevated tracks, with Mepamo-kun.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "b42bb8121967219899d625abba5f1a1f8ceaf886fd0d17e408d75167b9eeb325"
+    },
+    {
+      "id": "shinkansen-fuji-landscape",
+      "path": "assets/lesson-5/shinkansen-fuji-landscape.png",
+      "width": 435,
+      "height": 463,
+      "sourceReference": "references/lesson-5/02-sh-q1.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        122,
+        359,
+        557,
+        822
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A streamlined Shinkansen passenger train with Mount Fuji behind it.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "6531163434915e3e437123ec921a651fa0175ba5ef9081364a2a0ba528664555"
+    },
+    {
+      "id": "passenger-train",
+      "path": "assets/lesson-5/passenger-train.png",
+      "width": 227,
+      "height": 137,
+      "sourceReference": "references/lesson-5/04-sh-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        148,
+        348,
+        375,
+        485
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A high-speed passenger train.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "a9d20d4ada35a5203b797a2055fe0d17b6322cd744def46f0a67caa5aef8560f"
+    },
+    {
+      "id": "dedicated-tracks",
+      "path": "assets/lesson-5/dedicated-tracks.png",
+      "width": 227,
+      "height": 138,
+      "sourceReference": "references/lesson-5/04-sh-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        148,
+        533,
+        375,
+        671
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Dedicated railway tracks beneath overhead power lines.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "22880ecfa7a36a05cbba4610a494daa2dc4155ba0496d63230bc2b8d5af13574"
+    },
+    {
+      "id": "automatic-train-control",
+      "path": "assets/lesson-5/automatic-train-control.png",
+      "width": 236,
+      "height": 139,
+      "sourceReference": "references/lesson-5/04-sh-q3.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        146,
+        723,
+        382,
+        862
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "A train-control console beside Mepamo-kun.",
+      "containsBakedMascot": true,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "6045d6db5a9367cbc40826fc24110d2c19a0e45527513cd747dfe3b321f50cb4"
+    },
+    {
+      "id": "tokyo-kyoto-journey",
+      "path": "assets/lesson-5/tokyo-kyoto-journey.png",
+      "width": 401,
+      "height": 337,
+      "sourceReference": "references/lesson-5/05-sh-q4.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        110,
+        386,
+        511,
+        723
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Tokyo and Kyoto connected by a high-speed train.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "City-name signs are part of the illustration; keep the answer label as live text.",
+      "sha256": "34c47c74ea2976062f98abe1fba4b6c24dbe444bf2e8f16bddfa81f27340c68e"
+    },
+    {
+      "id": "adjacent-shops",
+      "path": "assets/lesson-5/adjacent-shops.png",
+      "width": 401,
+      "height": 340,
+      "sourceReference": "references/lesson-5/05-sh-q4.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        569,
+        386,
+        970,
+        726
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "Two neighboring shops on one street.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "",
+      "sha256": "dcc6a94ecd6de694007de95bbda08381e0cd6ba1645b621ea0bbde5f1aff4f7c"
+    },
+    {
+      "id": "station-entrance-platform",
+      "path": "assets/lesson-5/station-entrance-platform.png",
+      "width": 401,
+      "height": 338,
+      "sourceReference": "references/lesson-5/05-sh-q4.png",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "cropBox": [
+        1028,
+        386,
+        1429,
+        724
+      ],
+      "cropBoxConvention": "left, top, right-exclusive, bottom-exclusive; native source pixels",
+      "alt": "The entrance and platform within one railway station.",
+      "containsBakedMascot": false,
+      "kind": "scene",
+      "background": "Original opaque background retained; not a transparent cutout",
+      "notes": "The word Station is baked into a scene sign, not the answer label.",
+      "sha256": "6379695921c96d44767ef14011d288afc7321c1e5e44614e741eb9faae7e4a3e"
+    }
+  ]
+}

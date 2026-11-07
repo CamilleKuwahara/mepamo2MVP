@@ -1,0 +1,98 @@
+{
+  "ky-m1": {
+    "status": "missing",
+    "scriptHash": "42eaa5fbce528d2081028b07b807a0a50a71972d075e9442ebb685067eb4f590",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "ky-m2": {
+    "status": "missing",
+    "scriptHash": "e91e3279138d060fcced046613657053aeda6923123b466932a11a8a12274d64",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "ky-m3": {
+    "status": "missing",
+    "scriptHash": "3d903bb86dbb32780e8393109bf567d0b52794ce649646e19d9163e81155d93d",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "ky-m4": {
+    "status": "missing",
+    "scriptHash": "49d977e9cd863d9b05336ff0027ee301eef0a0bc4c347564e492812146cb2211",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "os-m1": {
+    "status": "missing",
+    "scriptHash": "47667b225ec3bfe7b0cde9de1b1bc12b6bf293ce010d5ce750d1dde376c2acc8",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "os-m2": {
+    "status": "missing",
+    "scriptHash": "10c799dde9df46a537a1ebd18c817000b2e9fef1b9f059b83f62d96f730fd225",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "os-m3": {
+    "status": "missing",
+    "scriptHash": "c70e9e9cb455bcbb010037a2dd664a0099e5575069040b5c9776fbc42c2954b9",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "os-m4": {
+    "status": "missing",
+    "scriptHash": "95e97f165e6f6654160313578ada449b9de84af86a8bc09ef67be7928c7ab51d",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "fu-m1": {
+    "status": "missing",
+    "scriptHash": "f1442607158a11a51d9ff82417a5a3c16fc6f580929849aa77817b34ba395177",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "fu-m2": {
+    "status": "missing",
+    "scriptHash": "8ab2a60bb149087265af1a9888eecb941cedfc1ceff243b74e0c39aa1684e792",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "fu-m3": {
+    "status": "missing",
+    "scriptHash": "2b72b6933707f222cc49b1f1ec0f2994c815e453fe5bced1ff2fe8fce8dfff4b",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "fu-m4": {
+    "status": "missing",
+    "scriptHash": "ec887e32798a50163111f5ac773194e13f924601e3e70e2a3e0f35e24cb8c08b",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "sh-m1": {
+    "status": "missing",
+    "scriptHash": "2ead459129476204cb4ffb9f176b09c2de7d59027efc0e22fe5d35ee45b244d2",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "sh-m2": {
+    "status": "missing",
+    "scriptHash": "ef19b3cf5a30ca1e043a72daff968c3f3e8421b32bd1a5651f1b266446e4c943",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "sh-m3": {
+    "status": "missing",
+    "scriptHash": "a249664fee3b4f7176ad67f1f986316f372627cab26af105b878f22fe5bb7e65",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  },
+  "sh-m4": {
+    "status": "missing",
+    "scriptHash": "ed6f5eedc2a8392af81ba5091797051a44813f3aaf67f788b6a913b0be2715a2",
+    "voice": "en_US-lessac-medium",
+    "reason": "Piper runtime, voice model, recordings and aligned word cues are not available in this workspace."
+  }
+}

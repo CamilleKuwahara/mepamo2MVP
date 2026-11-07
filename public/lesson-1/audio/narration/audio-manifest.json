@@ -1,0 +1,39 @@
+{
+  "voice": "Recorded synthetic English narrator; Piper en_US-lessac-medium from the existing prototype.",
+  "totalDurationSeconds": 86.187,
+  "practiceSpeech": false,
+  "timings": "word-timings.json",
+  "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/lessac/medium/MODEL_CARD",
+  "clips": [
+    {
+      "id": "story-0",
+      "src": "audio/narration/story-0.mp3",
+      "duration": 12.5417,
+      "wordCount": 34
+    },
+    {
+      "id": "story-1",
+      "src": "audio/narration/story-1.mp3",
+      "duration": 18.5876,
+      "wordCount": 40
+    },
+    {
+      "id": "story-2",
+      "src": "audio/narration/story-2.mp3",
+      "duration": 19.9024,
+      "wordCount": 41
+    },
+    {
+      "id": "story-3",
+      "src": "audio/narration/story-3.mp3",
+      "duration": 15.5022,
+      "wordCount": 38
+    },
+    {
+      "id": "story-4",
+      "src": "audio/narration/story-4.mp3",
+      "duration": 19.6528,
+      "wordCount": 47
+    }
+  ]
+}

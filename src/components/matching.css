@@ -1,0 +1,7 @@
+.shared-match-card[data-pair-color="sky"]{--pair-fill:#edf7ff;--pair-border:#5d9fce}
+.shared-match-card[data-pair-color="violet"]{--pair-fill:#f3effc;--pair-border:#9a7ac7}
+.shared-match-card[data-pair-color="orange"]{--pair-fill:#fff3e7;--pair-border:#d99a55}
+.shared-match-card[data-pair-color="coral"]{--pair-fill:#ffedf1;--pair-border:#d77d92}
+.essential-activity .shared-match-card[data-pair-color],.discovery-lesson .shared-match-card[data-pair-color],.essential-activity .shared-matching button.shared-match-card[data-pair-color]:not(:disabled):hover{background:var(--pair-fill);border-color:var(--pair-border);box-shadow:0 3px 0 var(--pair-border);color:inherit}
+.shared-matching .shared-match-card.is-pair-selected{outline:2px solid var(--green);outline-offset:3px}
+.shared-matching .shared-match-card:disabled{opacity:1}
