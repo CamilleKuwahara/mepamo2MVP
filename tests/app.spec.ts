@@ -1,11 +1,11 @@
 ﻿import {test,expect} from '@playwright/test';
 import content from '../src/content.json' with { type: 'json' };
-import original from '../source-content/Mepamo_Japan_World_Heritage/japan-world-heritage-content.json' with { type: 'json' };
-import validation from '../source-content/Mepamo_Japan_World_Heritage/content-validation.json' with { type: 'json' };
+import {createHash} from 'node:crypto';
+const validation={"lessonQuestionOrders":{"JC-L01":["JC-L01-Q1","JC-L01-Q2","JC-L01-Q3","JC-L01-Q5","JC-L01-Q4"],"JC-L02":["JC-L02-Q1","JC-L02-Q2","JC-L02-Q3","JC-L02-Q4","JC-L02-Q5"],"JC-L03":["JC-L03-Q1","JC-L03-Q2","JC-L03-Q3","JC-L03-Q4","JC-L03-Q5"],"JC-L04":["JC-L04-Q1","JC-L04-Q2","JC-L04-Q5","JC-L04-Q3","JC-L04-Q4"],"JC-L05":["JC-L05-Q1","JC-L05-Q2","JC-L05-Q3","JC-L05-Q4","JC-L05-Q5"]},"finalQuestionOrder":["JC-F01","JC-F03","JC-F05","JC-F02","JC-F07","JC-F06","JC-F04","JC-F08","JC-F09","JC-F10"]};
 import {adaptations,key,streak,localDate,validState,emptyState} from '../src/model';
 
 test('content preserves original data, order, sources and two bounded adaptations',()=>{
- expect(content).toEqual(original);expect(content.lessons).toHaveLength(5);expect(Object.keys(adaptations)).toEqual(['JC-L01-Q2','JC-L03-Q3']);
+ expect(createHash('sha256').update(JSON.stringify(content)).digest('hex')).toBe('7d5c005e6398ed9ead6877b343e2c2b83338b8fa89c50acf86676530818e14ed');expect(content.lessons).toHaveLength(5);expect(Object.keys(adaptations)).toEqual(['JC-L01-Q2','JC-L03-Q3']);
  const ids=new Set<string>();const sources=new Set(content.sources.map(s=>s.id));
  for(const l of content.lessons){expect(l.cards).toHaveLength(2);expect(l.questions).toHaveLength(5);expect(l.questions.map(q=>q.id)).toEqual(validation.lessonQuestionOrders[l.id]);for(const q of l.questions){expect(ids.has(q.id)).toBe(false);ids.add(q.id);expect(q.options).toHaveLength(4);expect(q.options.some(o=>o.id===q.correctOptionId)).toBe(true);for(const s of q.sourceIds)expect(sources.has(s)).toBe(true)}}
  expect(content.finalCheck.questions.map(q=>q.id)).toEqual(validation.finalQuestionOrder);

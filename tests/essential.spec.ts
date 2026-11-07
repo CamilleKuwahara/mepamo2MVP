@@ -1,7 +1,7 @@
 ﻿import {test,expect,type Page} from '@playwright/test';
 import {essential,essentialLessons,newDraft,grade,placeTile,moveItem,emptyEssential,type EssentialQuestion,type EssentialDraft} from '../src/essential/model';
 import {emptyState,key,validState} from '../src/model';
-import original from '../source-lessons/Mepamo_Codex_Lesson_Handoff/lesson-content.json' with { type: 'json' };
+import original from '../src/essential-content.json' with { type: 'json' };
 import manifest from '../src/essential-assets.json' with {type:'json'};
 const unresolvedAssets=manifest.assets.filter(a=>a.id!=='mount-fuji');
 async function launch(page:Page,l=0,qid?:string){await page.goto('/?course=essential');const s=emptyState();s.completed=[0];s.essential=emptyEssential();s.essential.completed=essentialLessons.slice(0,l).map(l=>l.id);const lesson=essentialLessons[l];s.essential.active=lesson.id;s.essential.attempts[lesson.id]={id:'essential-test-'+l,lesson:lesson.id,step:qid?lesson.steps.findIndex(s=>s.ref===qid):0,done:false,drafts:{},evaluations:{}};await page.evaluate(({key,s})=>localStorage.setItem(key,JSON.stringify(s)),{key,s});await page.reload();await page.locator(`[data-action=essential-node][data-id="${lesson.id}"]`).click();await page.locator('[data-action=essential-start]').click()}

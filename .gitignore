@@ -21,3 +21,9 @@ Thumbs.db
 # Private local screenshots and reference material (at any depth)
 screenshots/
 references/
+
+# Original handoff packages stay on this computer
+/source-artwork/
+/source-content/
+/source-feedback/
+/source-lessons/

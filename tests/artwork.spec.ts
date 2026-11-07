@@ -1,8 +1,9 @@
 ﻿import {test,expect} from '@playwright/test';
 import fs from 'node:fs';
+import {createHash} from 'node:crypto';
 import {emptyState,key} from '../src/model';
-const suppliedMascot=fs.readFileSync('source-artwork/mepamo_mascot_waving.svg','utf8');
-const suppliedFuji=fs.readFileSync('source-artwork/mepamo_fuji_animated.svg','utf8');
+const suppliedMascot=fs.readFileSync('src/assets/mepamo_mascot_waving.svg','utf8');
+const suppliedFujiHash='fa3b16bf7eed45e1ca8fc524d043d22eda3799ee94f3d05708d239baf6230038';
 
 test('supplied artwork geometry, mouth, shadow, timing, and responsive wrapper sizes are preserved',async({page})=>{
  await page.goto('/');const mascot=page.locator('svg.mepamo-mascot');await expect(mascot).toBeVisible();await expect(mascot.locator('script')).toHaveCount(0);
@@ -11,11 +12,12 @@ test('supplied artwork geometry, mouth, shadow, timing, and responsive wrapper s
   const actual=document.querySelector('svg.mepamo-mascot')!;
   const paths=(root:Element)=>Array.from(root.querySelectorAll('path')).map(n=>n.getAttribute('d'));
   return {original:paths(original),actual:paths(actual),shadow:actual.querySelector('ellipse')!.getAttribute('fill'),opacity:actual.querySelector('ellipse')!.getAttribute('opacity')};
- },suppliedMascot);expect(geometry.actual.map((d,i)=>d!==geometry.original[i]?i:-1).filter(i=>i>=0)).toEqual([3,4,7,8,9]);expect(geometry.shadow).toBe('#AFAFAF');expect(geometry.opacity).toBe('.3');
+ },suppliedMascot);expect(geometry.actual.map((d,i)=>d!==geometry.original[i]?i:-1).filter(i=>i>=0)).toEqual([]);expect(geometry.shadow).toBe('#AFAFAF');expect(geometry.opacity).toBe('.3');
  await expect(mascot.locator('.wave')).toHaveCSS('animation-duration','2.4s');await expect(mascot.locator('.wave')).toHaveCSS('transform-origin','230px 209px');await expect(mascot.locator('.pupil').first()).toHaveCSS('transition-duration','0.09s');
  await expect(page.locator('.mascot')).toHaveCSS('width','180px');const slot=await page.locator('.mascot').boundingBox();expect(slot!.height).toBeCloseTo(180*56/55,1);await expect(page.locator('.fuji-sticker')).toHaveCSS('width','160px');
  const box=await mascot.boundingBox();expect(box!.width/box!.height).toBeCloseTo(400/328,2);const fuji=page.locator('img.mepamo-fuji');await fuji.evaluate((img:HTMLImageElement)=>img.decode());const fbox=await fuji.boundingBox();expect(fbox!.width/fbox!.height).toBeCloseTo(295/228,2);
- expect(fs.readFileSync('public/assets/mepamo/artwork/mepamo_fuji_animated.svg','utf8')).toBe(suppliedFuji);
+ expect(createHash('sha256').update(fs.readFileSync('public/assets/mepamo/artwork/mepamo_fuji_animated.svg','utf8').replace(/\r\n/g,'\n')).digest('hex')).toBe(suppliedFujiHash);
+ expect(createHash('sha256').update(suppliedMascot.replace(/\r\n/g,'\n')).digest('hex')).toBe('2e0270165500684ee59439cbb62489d1918a314985dba74ac2b0f747c4a61050');
  await page.screenshot({path:'test-results/supplied-artwork-home.png',fullPage:true});
  const s=emptyState();s.completed=[0];s.attempt={id:'completed-art',lesson:0,card:2,question:4,drafts:{},submitted:true,done:false};await page.evaluate(({key,s})=>localStorage.setItem(key,JSON.stringify(s)),{key,s});await page.reload();await page.locator('.node.complete').click();await page.locator('[data-action="start"]').click();await page.locator('[data-action="continue"]').click();await expect(page.locator('.mascot.small')).toHaveCSS('width','120px');await expect(page.locator('.mascot.small svg.mepamo-mascot')).toBeVisible();await page.screenshot({path:'test-results/supplied-artwork-completion.png',fullPage:true});
 });

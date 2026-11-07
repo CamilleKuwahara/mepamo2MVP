@@ -1,9 +1,9 @@
 ﻿// Node equivalent of the supplied Python validator, for this machine without Python.
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-const root=new URL('../source-lessons/Mepamo_Codex_Lesson_Handoff/',import.meta.url);
-const data=JSON.parse(fs.readFileSync(new URL('lesson-content.json',root),'utf8'));
-const assets=JSON.parse(fs.readFileSync(new URL('asset-manifest.json',root),'utf8')).assets;
+const root=new URL('../src/',import.meta.url);
+const data=JSON.parse(fs.readFileSync(new URL('essential-content.json',root),'utf8'));
+const assets=JSON.parse(fs.readFileSync(new URL('essential-assets.json',root),'utf8')).assets;
 const assetIds=new Set(assets.map(a=>a.id));const lessons=data.units.flatMap(u=>u.lessons),questions=lessons.flatMap(l=>l.questions);
 const unique=ids=>new Set(ids).size===ids.length;
 const sameSet=(a,b)=>a.length===b.length&&a.every(x=>b.includes(x));
