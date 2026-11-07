@@ -17,3 +17,7 @@ playwright-report/
 *.zip
 .DS_Store
 Thumbs.db
+
+# Private local screenshots and reference material (at any depth)
+screenshots/
+references/
